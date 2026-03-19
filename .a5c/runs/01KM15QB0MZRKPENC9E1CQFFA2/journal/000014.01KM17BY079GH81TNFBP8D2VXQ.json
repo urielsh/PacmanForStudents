@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T19:39:38.887Z",
+  "data": {
+    "effectId": "01KM17BY003EESQCJNFX3ET007",
+    "invocationKey": "packman-multi-lang-edu:S000007:fix-quality-issues",
+    "invocationHash": "0d92f377f27d04a3c00809c16260fdbd8578d1c2153fe7bb8347b56b90fd5708",
+    "stepId": "S000007",
+    "taskId": "fix-quality-issues",
+    "kind": "agent",
+    "label": "fix",
+    "taskDefRef": "tasks/01KM17BY003EESQCJNFX3ET007/task.json",
+    "labels": [
+      "fix",
+      "java",
+      "iteration-1"
+    ]
+  },
+  "checksum": "6ba437b8974f906ed1eae44d301bbba3d79eea78d74ac182afdcff76cd242db3"
+}

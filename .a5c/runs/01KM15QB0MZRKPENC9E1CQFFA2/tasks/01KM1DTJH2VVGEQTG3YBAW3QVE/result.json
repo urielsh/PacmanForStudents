@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1DTJH2VVGEQTG3YBAW3QVE",
+  "taskId": "implement-game-logic",
+  "invocationKey": "packman-multi-lang-edu:S000039:implement-game-logic",
+  "status": "ok",
+  "result": {
+    "compilation": "g++ clean with zero warnings",
+    "files_created": [
+      "cpp/maze.h",
+      "cpp/maze.cpp",
+      "cpp/pacman.h",
+      "cpp/pacman.cpp",
+      "cpp/ghost.h",
+      "cpp/ghost.cpp",
+      "cpp/game_logic.h",
+      "cpp/game_logic.cpp"
+    ]
+  },
+  "startedAt": "2026-03-18T21:33:59.832Z",
+  "finishedAt": "2026-03-18T21:33:59.832Z",
+  "value": {
+    "compilation": "g++ clean with zero warnings",
+    "files_created": [
+      "cpp/maze.h",
+      "cpp/maze.cpp",
+      "cpp/pacman.h",
+      "cpp/pacman.cpp",
+      "cpp/ghost.h",
+      "cpp/ghost.cpp",
+      "cpp/game_logic.h",
+      "cpp/game_logic.cpp"
+    ]
+  }
+}

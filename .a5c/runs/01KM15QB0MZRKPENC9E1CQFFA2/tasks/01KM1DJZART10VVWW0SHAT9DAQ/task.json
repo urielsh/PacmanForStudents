@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1DJZART10VVWW0SHAT9DAQ",
+  "taskId": "build-test-lang",
+  "invocationKey": "packman-multi-lang-edu:S000035:build-test-lang",
+  "stepId": "S000035",
+  "kind": "agent",
+  "title": "Build and test typescript (iteration 1)",
+  "labels": [
+    "iteration-1",
+    "quality-gate",
+    "typescript"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1DJZART10VVWW0SHAT9DAQ/input.json",
+    "outputJsonPath": "tasks/01KM1DJZART10VVWW0SHAT9DAQ/result.json"
+  },
+  "inputs": {
+    "iteration": 1,
+    "language": "typescript"
+  }
+}

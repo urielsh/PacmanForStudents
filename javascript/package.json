@@ -1,0 +1,20 @@
+{
+  "name": "pacman-javascript",
+  "version": "1.0.0",
+  "description": "Educational Pacman - JavaScript/HTML5 Canvas implementation",
+  "main": "game.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "start": "xdg-open index.html || open index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "keywords": [],
+  "license": "ISC"
+}

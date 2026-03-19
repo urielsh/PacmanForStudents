@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1FGBSJBQRVV58QRMN93K3F",
+  "taskId": "build-setup-script",
+  "invocationKey": "packman-multi-lang-edu:S000050:build-setup-script",
+  "stepId": "S000050",
+  "kind": "agent",
+  "title": "Create setup.sh prerequisite checker",
+  "labels": [
+    "devops",
+    "phase-6"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1FGBSJBQRVV58QRMN93K3F/input.json",
+    "outputJsonPath": "tasks/01KM1FGBSJBQRVV58QRMN93K3F/result.json"
+  },
+  "inputs": {
+    "description": "Create setup.sh prerequisite checker/installer for all 5 languages."
+  }
+}

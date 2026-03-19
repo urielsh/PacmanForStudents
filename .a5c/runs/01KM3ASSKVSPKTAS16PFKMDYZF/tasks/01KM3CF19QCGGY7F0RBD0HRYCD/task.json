@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM3CF19QCGGY7F0RBD0HRYCD",
+  "taskId": "frontend-pages",
+  "invocationKey": "packman-website:S000010:frontend-pages",
+  "stepId": "S000010",
+  "kind": "agent",
+  "title": "Frontend: Landing page, content collections, language pages, GameEmbed, Play page",
+  "labels": [
+    "frontend",
+    "phase2",
+    "wave2"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM3CF19QCGGY7F0RBD0HRYCD/input.json",
+    "outputJsonPath": "tasks/01KM3CF19QCGGY7F0RBD0HRYCD/result.json"
+  },
+  "inputs": {
+    "projectRoot": "/home/urisha/Desktop/workspace/Packman",
+    "websiteRoot": "/home/urisha/Desktop/workspace/Packman/website"
+  }
+}

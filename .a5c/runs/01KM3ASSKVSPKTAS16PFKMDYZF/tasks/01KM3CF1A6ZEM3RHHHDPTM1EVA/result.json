@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM3CF1A6ZEM3RHHHDPTM1EVA",
+  "taskId": "devops-cicd",
+  "invocationKey": "packman-website:S000012:devops-cicd",
+  "status": "ok",
+  "result": {
+    "filesCreated": [
+      "website/infrastructure/ci/deploy.yml",
+      "website/infrastructure/ci/build-wasm.yml",
+      ".github/workflows/deploy.yml",
+      ".gitignore"
+    ],
+    "success": true,
+    "summary": "Created 4 CI/CD files. deploy.yml: GitHub Actions workflow on push to main (website/** paths) + manual dispatch, Node 20 setup, npm ci, Astro build, rsync deploy to OCI VM via SSH secrets. build-wasm.yml: reusable workflow with 3 parallel jobs (Emscripten C++, pygbag Python, Maven Java). Copied deploy.yml to .github/workflows/. Updated .gitignore with website build artifacts and WASM output paths."
+  },
+  "startedAt": "2026-03-19T15:57:55.233Z",
+  "finishedAt": "2026-03-19T15:57:55.233Z",
+  "value": {
+    "filesCreated": [
+      "website/infrastructure/ci/deploy.yml",
+      "website/infrastructure/ci/build-wasm.yml",
+      ".github/workflows/deploy.yml",
+      ".gitignore"
+    ],
+    "success": true,
+    "summary": "Created 4 CI/CD files. deploy.yml: GitHub Actions workflow on push to main (website/** paths) + manual dispatch, Node 20 setup, npm ci, Astro build, rsync deploy to OCI VM via SSH secrets. build-wasm.yml: reusable workflow with 3 parallel jobs (Emscripten C++, pygbag Python, Maven Java). Copied deploy.yml to .github/workflows/. Updated .gitignore with website build artifacts and WASM output paths."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1D83QYQQNNEC4WJYHTFT29",
+  "taskId": "build-lang-infra",
+  "invocationKey": "packman-multi-lang-edu:S000033:build-lang-infra",
+  "stepId": "S000033",
+  "kind": "agent",
+  "title": "Build typescript infrastructure",
+  "labels": [
+    "devops",
+    "phase-4",
+    "typescript"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1D83QYQQNNEC4WJYHTFT29/input.json",
+    "outputJsonPath": "tasks/01KM1D83QYQQNNEC4WJYHTFT29/result.json"
+  },
+  "inputs": {
+    "framework": "HTML5 Canvas + Types",
+    "language": "typescript",
+    "phase": 4
+  }
+}

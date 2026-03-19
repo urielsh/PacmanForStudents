@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1CJJMRX6TWH800HH1EYC2S",
+  "taskId": "write-lang-readme",
+  "invocationKey": "packman-multi-lang-edu:S000028:write-lang-readme",
+  "status": "ok",
+  "result": {
+    "file": "javascript/README.md",
+    "sections": [
+      "Title",
+      "Unique",
+      "Prerequisites",
+      "Quick Start",
+      "Architecture",
+      "Things to Notice",
+      "Exercises",
+      "File Reference",
+      "Tests",
+      "Cross-Language"
+    ],
+    "status": "success"
+  },
+  "startedAt": "2026-03-18T21:13:06.309Z",
+  "finishedAt": "2026-03-18T21:13:06.309Z",
+  "value": {
+    "file": "javascript/README.md",
+    "sections": [
+      "Title",
+      "Unique",
+      "Prerequisites",
+      "Quick Start",
+      "Architecture",
+      "Things to Notice",
+      "Exercises",
+      "File Reference",
+      "Tests",
+      "Cross-Language"
+    ],
+    "status": "success"
+  }
+}

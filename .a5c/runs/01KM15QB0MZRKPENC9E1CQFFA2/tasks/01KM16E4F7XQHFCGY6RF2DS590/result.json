@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM16E4F7XQHFCGY6RF2DS590",
+  "taskId": "add-java-annotations",
+  "invocationKey": "packman-multi-lang-edu:S000003:add-java-annotations",
+  "status": "ok",
+  "result": {
+    "annotationsAdded": 31,
+    "compilationSuccess": true,
+    "filesAnnotated": 6,
+    "summary": "Added 31 educational annotations across 6 Java files covering all 6 concepts (Game Loop Timing, Rendering, Input Handling, Object Movement, Collision Detection, Ghost AI). Each annotation includes cross-language comparisons. BUILD SUCCESS verified."
+  },
+  "startedAt": "2026-03-18T19:30:40.299Z",
+  "finishedAt": "2026-03-18T19:30:40.299Z",
+  "value": {
+    "annotationsAdded": 31,
+    "compilationSuccess": true,
+    "filesAnnotated": 6,
+    "summary": "Added 31 educational annotations across 6 Java files covering all 6 concepts (Game Loop Timing, Rendering, Input Handling, Object Movement, Collision Detection, Ghost AI). Each annotation includes cross-language comparisons. BUILD SUCCESS verified."
+  }
+}

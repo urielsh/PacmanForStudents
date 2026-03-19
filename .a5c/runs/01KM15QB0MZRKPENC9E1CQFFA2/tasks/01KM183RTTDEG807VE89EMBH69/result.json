@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM183RTTDEG807VE89EMBH69",
+  "taskId": "add-lang-annotations",
+  "invocationKey": "packman-multi-lang-edu:S000014:add-lang-annotations",
+  "status": "ok",
+  "result": {
+    "annotationsAdded": 30,
+    "filesAnnotated": 6,
+    "summary": "Added 30 educational annotations across 6 Python files. Cross-references Java. All 6 concepts covered."
+  },
+  "startedAt": "2026-03-18T20:18:47.445Z",
+  "finishedAt": "2026-03-18T20:18:47.445Z",
+  "value": {
+    "annotationsAdded": 30,
+    "filesAnnotated": 6,
+    "summary": "Added 30 educational annotations across 6 Python files. Cross-references Java. All 6 concepts covered."
+  }
+}

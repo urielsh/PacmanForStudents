@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T21:00:19.587Z",
+  "data": {
+    "effectId": "01KM1BZN7V6M57E7F05ZKSHRH7",
+    "invocationKey": "packman-multi-lang-edu:S000023:add-lang-annotations",
+    "invocationHash": "ec71d418f81a45999cfaa7055490deaf0693d185bc9788175d1b707583728b7d",
+    "stepId": "S000023",
+    "taskId": "add-lang-annotations",
+    "kind": "agent",
+    "label": "phase-3",
+    "taskDefRef": "tasks/01KM1BZN7V6M57E7F05ZKSHRH7/task.json",
+    "labels": [
+      "phase-3",
+      "annotations",
+      "javascript"
+    ]
+  },
+  "checksum": "0e4379e789f70479cdb7ead09e23e3889a82b3720a7f7feef1e16c8c981379d7"
+}

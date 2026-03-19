@@ -1,0 +1,19 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T22:29:31.754Z",
+  "data": {
+    "effectId": "01KM1H2ZZ393NRAWSSQ86N49GD",
+    "invocationKey": "packman-multi-lang-edu:S000058:cross-lang-verify",
+    "invocationHash": "23fb5f1887e666ce7a4f3538fedaedb780a8f31414fe54679aa0e5bf8923464e",
+    "stepId": "S000058",
+    "taskId": "cross-lang-verify",
+    "kind": "agent",
+    "label": "phase-7",
+    "taskDefRef": "tasks/01KM1H2ZZ393NRAWSSQ86N49GD/task.json",
+    "labels": [
+      "phase-7",
+      "verification"
+    ]
+  },
+  "checksum": "b8429b74446c003c798f59236aec89cb759ac0ed51a637555145ec3015c985ab"
+}

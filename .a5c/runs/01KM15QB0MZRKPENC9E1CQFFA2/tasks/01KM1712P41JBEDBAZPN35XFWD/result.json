@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1712P41JBEDBAZPN35XFWD",
+  "taskId": "quality-scorer",
+  "invocationKey": "packman-multi-lang-edu:S000006:quality-scorer",
+  "status": "ok",
+  "result": {
+    "criticalIssues": [],
+    "overallScore": 81,
+    "recommendations": [
+      "Extract draw() methods from Maze.java, Pacman.java, and Ghost.java into the GamePanel rendering pipeline to eliminate java.awt imports from game logic files. The entity classes should only expose position/state via getters; all Graphics2D drawing should happen in GamePanel.paintComponent().",
+      "Remove import java.awt.* from Maze.java, Pacman.java, Ghost.java after moving draw() methods to GamePanel. Ghost needs a getColor() getter. Maze draw logic moves to GamePanel.",
+      "Keep entity files focused on game logic (position, movement, state) with zero rendering dependencies."
+    ],
+    "scores": {
+      "annotations": 100,
+      "bugFixes": 100,
+      "build": 100,
+      "cleanCode": 25
+    }
+  },
+  "startedAt": "2026-03-18T19:39:29.799Z",
+  "finishedAt": "2026-03-18T19:39:29.799Z",
+  "value": {
+    "criticalIssues": [],
+    "overallScore": 81,
+    "recommendations": [
+      "Extract draw() methods from Maze.java, Pacman.java, and Ghost.java into the GamePanel rendering pipeline to eliminate java.awt imports from game logic files. The entity classes should only expose position/state via getters; all Graphics2D drawing should happen in GamePanel.paintComponent().",
+      "Remove import java.awt.* from Maze.java, Pacman.java, Ghost.java after moving draw() methods to GamePanel. Ghost needs a getColor() getter. Maze draw logic moves to GamePanel.",
+      "Keep entity files focused on game logic (position, movement, state) with zero rendering dependencies."
+    ],
+    "scores": {
+      "annotations": 100,
+      "bugFixes": 100,
+      "build": 100,
+      "cleanCode": 25
+    }
+  }
+}

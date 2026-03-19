@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM3AWPKDZ1KY9YBFJPWM9K65",
+  "taskId": "write-contracts",
+  "invocationKey": "packman-website:S000004:write-contracts",
+  "status": "ok",
+  "result": {
+    "filesCreated": [
+      "website/docs/api/snippet-schema.md",
+      "website/docs/api/postmessage-protocol.md"
+    ],
+    "success": true,
+    "summary": "2 API contract docs created: CodeSnippet interface schema and PostMessage protocol specification with TypeScript types and example payloads."
+  },
+  "startedAt": "2026-03-19T15:29:56.096Z",
+  "finishedAt": "2026-03-19T15:29:56.096Z",
+  "value": {
+    "filesCreated": [
+      "website/docs/api/snippet-schema.md",
+      "website/docs/api/postmessage-protocol.md"
+    ],
+    "success": true,
+    "summary": "2 API contract docs created: CodeSnippet interface schema and PostMessage protocol specification with TypeScript types and example payloads."
+  }
+}

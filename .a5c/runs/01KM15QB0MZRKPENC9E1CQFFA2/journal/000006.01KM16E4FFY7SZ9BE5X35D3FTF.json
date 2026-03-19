@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T19:23:22.479Z",
+  "data": {
+    "effectId": "01KM16E4F7XQHFCGY6RF2DS590",
+    "invocationKey": "packman-multi-lang-edu:S000003:add-java-annotations",
+    "invocationHash": "4bbddceaee2b15a58a3461121975153f47136595ff9de0132e9aff465cca3629",
+    "stepId": "S000003",
+    "taskId": "add-java-annotations",
+    "kind": "agent",
+    "label": "phase-1",
+    "taskDefRef": "tasks/01KM16E4F7XQHFCGY6RF2DS590/task.json",
+    "labels": [
+      "phase-1",
+      "frontend",
+      "annotations"
+    ]
+  },
+  "checksum": "a5c1809beaae95d707fde5239225a14bf13e17cc6734eb6419f7f30c34acf2d3"
+}

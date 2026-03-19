@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-19T15:47:12.323Z",
+  "data": {
+    "effectId": "01KM3CF1A1B512RACM4QHJ6C8W",
+    "invocationKey": "packman-website:S000011:backend-cpp-wasm",
+    "invocationHash": "587b9c08afd8aa0805b938c1e3a5f90e3b77d4552bd2b773d8e53a6e7a6efc57",
+    "stepId": "S000011",
+    "taskId": "backend-cpp-wasm",
+    "kind": "agent",
+    "label": "phase2",
+    "taskDefRef": "tasks/01KM3CF1A1B512RACM4QHJ6C8W/task.json",
+    "labels": [
+      "phase2",
+      "backend",
+      "wave2"
+    ]
+  },
+  "checksum": "cd66793457789009fd205ff3cf8dd757c39dd22ad3d453ad6b31131e6a24d681"
+}

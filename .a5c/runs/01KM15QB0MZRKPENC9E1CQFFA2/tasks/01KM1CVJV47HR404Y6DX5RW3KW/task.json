@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1CVJV47HR404Y6DX5RW3KW",
+  "taskId": "implement-game-logic",
+  "invocationKey": "packman-multi-lang-edu:S000030:implement-game-logic",
+  "stepId": "S000030",
+  "kind": "agent",
+  "title": "Implement typescript game logic",
+  "labels": [
+    "backend",
+    "phase-4",
+    "typescript"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1CVJV47HR404Y6DX5RW3KW/input.json",
+    "outputJsonPath": "tasks/01KM1CVJV47HR404Y6DX5RW3KW/result.json"
+  },
+  "inputs": {
+    "framework": "HTML5 Canvas + Types",
+    "language": "typescript",
+    "phase": 4,
+    "priorLanguages": [
+      "python",
+      "javascript"
+    ]
+  }
+}

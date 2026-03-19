@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1D83QYQQNNEC4WJYHTFT29",
+  "taskId": "build-lang-infra",
+  "invocationKey": "packman-multi-lang-edu:S000033:build-lang-infra",
+  "status": "ok",
+  "result": {
+    "files_created": [
+      "typescript/tsconfig.json",
+      "typescript/package.json",
+      "typescript/vitest.config.ts",
+      "typescript/run.sh"
+    ],
+    "validation": {
+      "esbuild": "PASS",
+      "tsc": "PASS"
+    }
+  },
+  "startedAt": "2026-03-18T21:24:05.671Z",
+  "finishedAt": "2026-03-18T21:24:05.671Z",
+  "value": {
+    "files_created": [
+      "typescript/tsconfig.json",
+      "typescript/package.json",
+      "typescript/vitest.config.ts",
+      "typescript/run.sh"
+    ],
+    "validation": {
+      "esbuild": "PASS",
+      "tsc": "PASS"
+    }
+  }
+}

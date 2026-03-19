@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T21:28:59.573Z",
+  "data": {
+    "effectId": "01KM1DM4XD4TERG1SJ73ZHKYB8",
+    "invocationKey": "packman-multi-lang-edu:S000036:quality-scorer",
+    "invocationHash": "b1002c9ef12c3362266c23856b63ae69a26db11ebbd8f971301826b8b0f82906",
+    "stepId": "S000036",
+    "taskId": "quality-scorer",
+    "kind": "agent",
+    "label": "quality-scoring",
+    "taskDefRef": "tasks/01KM1DM4XD4TERG1SJ73ZHKYB8/task.json",
+    "labels": [
+      "quality-scoring",
+      "typescript",
+      "iteration-1"
+    ]
+  },
+  "checksum": "d5741b646b62530ca0bb180b1b81197b072b6dbbd809a2ff277234257a977d5f"
+}

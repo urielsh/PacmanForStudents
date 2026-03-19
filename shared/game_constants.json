@@ -1,0 +1,25 @@
+{
+  "grid": {
+    "width": 40,
+    "height": 30,
+    "tile_size": 20
+  },
+  "window": {
+    "width": 800,
+    "height": 600
+  },
+  "fps": 60,
+  "scoring": {
+    "pellet_points": 10
+  },
+  "ghost": {
+    "move_interval_frames": 20
+  },
+  "pacman_start": { "x": 5, "y": 5 },
+  "ghost_starts": [
+    { "name": "Blinky", "x": 10, "y": 10, "color": "#FF0000" },
+    { "name": "Pinky",  "x": 10, "y": 11, "color": "#FFB8FF" },
+    { "name": "Inky",   "x": 11, "y": 10, "color": "#00FFFF" },
+    { "name": "Clyde",  "x": 11, "y": 11, "color": "#FF00FF" }
+  ]
+}

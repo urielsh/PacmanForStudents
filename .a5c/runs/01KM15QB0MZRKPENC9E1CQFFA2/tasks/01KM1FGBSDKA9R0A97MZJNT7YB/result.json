@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1FGBSDKA9R0A97MZJNT7YB",
+  "taskId": "write-comparison-docs",
+  "invocationKey": "packman-multi-lang-edu:S000049:write-comparison-docs",
+  "status": "ok",
+  "result": {
+    "docs_created": [
+      "docs/01_game_loop.md",
+      "docs/02_rendering.md",
+      "docs/03_input_handling.md",
+      "docs/04_collision_detection.md",
+      "docs/05_ghost_ai.md",
+      "docs/06_state_management.md"
+    ],
+    "total_lines": 1821
+  },
+  "startedAt": "2026-03-18T22:11:04.751Z",
+  "finishedAt": "2026-03-18T22:11:04.751Z",
+  "value": {
+    "docs_created": [
+      "docs/01_game_loop.md",
+      "docs/02_rendering.md",
+      "docs/03_input_handling.md",
+      "docs/04_collision_detection.md",
+      "docs/05_ghost_ai.md",
+      "docs/06_state_management.md"
+    ],
+    "total_lines": 1821
+  }
+}

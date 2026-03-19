@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM19YERJDJZX8SM2GBABSJX9",
+  "taskId": "build-test-lang",
+  "invocationKey": "packman-multi-lang-edu:S000017:build-test-lang",
+  "status": "ok",
+  "result": {
+    "buildSuccess": true,
+    "errors": [],
+    "fixesApplied": [],
+    "testsFailed": 0,
+    "testsPassed": 18
+  },
+  "startedAt": "2026-03-18T20:51:35.265Z",
+  "finishedAt": "2026-03-18T20:51:35.265Z",
+  "value": {
+    "buildSuccess": true,
+    "errors": [],
+    "fixesApplied": [],
+    "testsFailed": 0,
+    "testsPassed": 18
+  }
+}

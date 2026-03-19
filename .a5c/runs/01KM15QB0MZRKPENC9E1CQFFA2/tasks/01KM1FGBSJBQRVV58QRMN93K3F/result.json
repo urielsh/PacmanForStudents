@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1FGBSJBQRVV58QRMN93K3F",
+  "taskId": "build-setup-script",
+  "invocationKey": "packman-multi-lang-edu:S000050:build-setup-script",
+  "status": "ok",
+  "result": {
+    "checks": 15,
+    "features": [
+      "ANSI colors",
+      "apt-get install",
+      "pip3 install",
+      "summary"
+    ],
+    "file": "setup.sh",
+    "status": "success"
+  },
+  "startedAt": "2026-03-18T22:11:04.878Z",
+  "finishedAt": "2026-03-18T22:11:04.878Z",
+  "value": {
+    "checks": 15,
+    "features": [
+      "ANSI colors",
+      "apt-get install",
+      "pip3 install",
+      "summary"
+    ],
+    "file": "setup.sh",
+    "status": "success"
+  }
+}

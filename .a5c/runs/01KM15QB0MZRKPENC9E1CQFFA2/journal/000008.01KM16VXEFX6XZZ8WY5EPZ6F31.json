@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T19:30:54.031Z",
+  "data": {
+    "effectId": "01KM16VXE7WF5TQ2VF7RXSBHQJ",
+    "invocationKey": "packman-multi-lang-edu:S000004:write-java-tests",
+    "invocationHash": "686c5aa0bfcf4150fcbf4f887ede7f2b7f2f5834d92003e57e102f5130307ee3",
+    "stepId": "S000004",
+    "taskId": "write-java-tests",
+    "kind": "agent",
+    "label": "phase-1",
+    "taskDefRef": "tasks/01KM16VXE7WF5TQ2VF7RXSBHQJ/task.json",
+    "labels": [
+      "phase-1",
+      "qa",
+      "tests"
+    ]
+  },
+  "checksum": "297e5c8077041b4f97c862296d59cfcb7500209ed0118b7de28157ecd76dd514"
+}

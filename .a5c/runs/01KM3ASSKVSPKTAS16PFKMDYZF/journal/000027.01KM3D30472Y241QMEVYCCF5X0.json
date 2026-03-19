@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-19T15:58:06.471Z",
+  "data": {
+    "effectId": "01KM3D3045W6D2HNAA9T6S745M",
+    "invocationKey": "packman-website:S000014:backend-python-java-wasm",
+    "invocationHash": "fe146e09dd39f50e037001ff0ce4e52c693bae10164d7961ebfdd25d8951e47d",
+    "stepId": "S000014",
+    "taskId": "backend-python-java-wasm",
+    "kind": "agent",
+    "label": "phase2",
+    "taskDefRef": "tasks/01KM3D3045W6D2HNAA9T6S745M/task.json",
+    "labels": [
+      "phase2",
+      "backend",
+      "wave3"
+    ]
+  },
+  "checksum": "d1196a0771ebca21c38b91151f7e077348049033862ad6d12825c2b289101a03"
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1FGBS4YCDQC1SW24R7ZTDA",
+  "taskId": "build-launcher",
+  "invocationKey": "packman-multi-lang-edu:S000048:build-launcher",
+  "status": "ok",
+  "result": {
+    "features": [
+      "ASCII art",
+      "arrow-key menu",
+      "prereq detection",
+      "language blurbs",
+      "subprocess launch",
+      "comparisons submenu"
+    ],
+    "file": "launcher.py",
+    "status": "success"
+  },
+  "startedAt": "2026-03-18T22:11:04.630Z",
+  "finishedAt": "2026-03-18T22:11:04.630Z",
+  "value": {
+    "features": [
+      "ASCII art",
+      "arrow-key menu",
+      "prereq detection",
+      "language blurbs",
+      "subprocess launch",
+      "comparisons submenu"
+    ],
+    "file": "launcher.py",
+    "status": "success"
+  }
+}

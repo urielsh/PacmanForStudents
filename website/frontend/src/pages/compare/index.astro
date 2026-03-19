@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const comparisons = await getCollection('comparisons');
+const sorted = comparisons.sort((a, b) => a.data.order - b.data.order);
+
+const topicIcons: Record<string, string> = {
+  'game-loop': '&#128260;',
+  'rendering': '&#127912;',
+  'input-handling': '&#9000;',
+  'collision-detection': '&#128165;',
+  'ghost-ai': '&#128123;',
+  'state-management': '&#128202;',
+};
+---
+
+<BaseLayout title="Compare Languages - Packman">
+  <div class="py-4">
+    <!-- Page header -->
+    <div class="text-center mb-12">
+      <h1 class="font-heading text-pacman-yellow text-xl sm:text-2xl mb-4 tracking-wider">
+        CROSS-LANGUAGE COMPARISONS
+      </h1>
+      <p class="text-gray-400 text-sm max-w-lg mx-auto">
+        Six deep-dive comparisons showing how the same game concept is implemented
+        differently across Python, JavaScript, TypeScript, Java, and C++.
+      </p>
+    </div>
+
+    <!-- Comparison cards grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      {sorted.map((topic) => (
+        <a
+          href={`/compare/${topic.slug}`}
+          class="group block border-2 border-wall-blue rounded-lg p-6 hover:border-pacman-yellow transition-all duration-300 hover:-translate-y-1"
+        >
+          <!-- Topic number and icon -->
+          <div class="flex items-center justify-between mb-4">
+            <span class="font-heading text-xs text-gray-600">
+              {String(topic.data.order).padStart(2, '0')}
+            </span>
+            <span
+              class="text-2xl opacity-60 group-hover:opacity-100 transition-opacity"
+              set:html={topicIcons[topic.slug] || '&#128196;'}
+            />
+          </div>
+
+          <!-- Title -->
+          <h2 class="font-heading text-sm text-pacman-yellow mb-3 tracking-wide group-hover:text-yellow-400 transition-colors">
+            {topic.data.title}
+          </h2>
+
+          <!-- Description -->
+          <p class="text-gray-400 text-xs leading-relaxed group-hover:text-gray-300 transition-colors">
+            {topic.data.description}
+          </p>
+
+          <!-- Language badges -->
+          <div class="mt-4 flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 text-[10px] rounded bg-gray-900 text-gray-500 border border-gray-800">Python</span>
+            <span class="px-2 py-0.5 text-[10px] rounded bg-gray-900 text-gray-500 border border-gray-800">JS</span>
+            <span class="px-2 py-0.5 text-[10px] rounded bg-gray-900 text-gray-500 border border-gray-800">TS</span>
+            <span class="px-2 py-0.5 text-[10px] rounded bg-gray-900 text-gray-500 border border-gray-800">Java</span>
+            <span class="px-2 py-0.5 text-[10px] rounded bg-gray-900 text-gray-500 border border-gray-800">C++</span>
+          </div>
+
+          <!-- Read more indicator -->
+          <div class="mt-4 text-gray-600 group-hover:text-pacman-yellow text-xs transition-colors">
+            Read comparison &rarr;
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

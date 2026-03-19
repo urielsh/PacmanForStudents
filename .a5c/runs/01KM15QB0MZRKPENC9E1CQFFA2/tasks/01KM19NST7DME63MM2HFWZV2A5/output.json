@@ -1,0 +1,1 @@
+{"summary": "Created 4 test files + __init__.py. 18 pytest tests all pass. Maze(7), Pacman(4), Ghost(3), GameLogic(4).", "testFiles": ["test_maze.py", "test_pacman.py", "test_ghost.py", "test_game_logic.py"], "testsPassed": 18, "testsFailed": 0}

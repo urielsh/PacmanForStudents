@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1BFSKHK0KJHER8RR9QV4KC",
+  "taskId": "quality-scorer",
+  "invocationKey": "packman-multi-lang-edu:S000018:quality-scorer",
+  "status": "ok",
+  "result": {
+    "criticalIssues": [],
+    "overallScore": 98,
+    "recommendations": [
+      "Annotations: Add cross-language references to JavaScript/TypeScript/C++ in annotation blocks (currently Java-only)",
+      "Behavior Match: Align ghost eye rendering offsets with Java reference for pixel-identical visuals"
+    ],
+    "scores": {
+      "annotations": 95,
+      "behaviorMatch": 97,
+      "buildTests": 100,
+      "namingConventions": 98,
+      "separationOfConcerns": 100
+    }
+  },
+  "startedAt": "2026-03-18T20:53:12.332Z",
+  "finishedAt": "2026-03-18T20:53:12.332Z",
+  "value": {
+    "criticalIssues": [],
+    "overallScore": 98,
+    "recommendations": [
+      "Annotations: Add cross-language references to JavaScript/TypeScript/C++ in annotation blocks (currently Java-only)",
+      "Behavior Match: Align ghost eye rendering offsets with Java reference for pixel-identical visuals"
+    ],
+    "scores": {
+      "annotations": 95,
+      "behaviorMatch": 97,
+      "buildTests": 100,
+      "namingConventions": 98,
+      "separationOfConcerns": 100
+    }
+  }
+}

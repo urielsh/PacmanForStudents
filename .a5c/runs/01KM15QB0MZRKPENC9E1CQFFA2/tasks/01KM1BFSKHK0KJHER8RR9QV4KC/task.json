@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1BFSKHK0KJHER8RR9QV4KC",
+  "taskId": "quality-scorer",
+  "invocationKey": "packman-multi-lang-edu:S000018:quality-scorer",
+  "stepId": "S000018",
+  "kind": "agent",
+  "title": "Quality score: Phase 2: python (iteration 1)",
+  "labels": [
+    "iteration-1",
+    "python",
+    "quality-scoring"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1BFSKHK0KJHER8RR9QV4KC/input.json",
+    "outputJsonPath": "tasks/01KM1BFSKHK0KJHER8RR9QV4KC/result.json"
+  },
+  "inputs": {
+    "buildResult": {
+      "buildSuccess": true,
+      "errors": [],
+      "fixesApplied": [],
+      "testsFailed": 0,
+      "testsPassed": 18
+    },
+    "checks": [
+      "build",
+      "tests",
+      "annotations",
+      "behavior-match"
+    ],
+    "iteration": 1,
+    "language": "python",
+    "phase": "Phase 2: python",
+    "targetQuality": 85
+  }
+}

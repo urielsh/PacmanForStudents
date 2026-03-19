@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1BS5E3HP4Y1BJDT93J7YPT",
+  "taskId": "implement-game-logic",
+  "invocationKey": "packman-multi-lang-edu:S000021:implement-game-logic",
+  "status": "ok",
+  "result": {
+    "conventions": "ZERO rendering imports, wall checking on all movement, camelCase/PascalCase/UPPER_SNAKE",
+    "files_created": [
+      "javascript/maze.js",
+      "javascript/pacman.js",
+      "javascript/ghost.js",
+      "javascript/game_logic.js"
+    ]
+  },
+  "startedAt": "2026-03-18T20:58:30.686Z",
+  "finishedAt": "2026-03-18T20:58:30.686Z",
+  "value": {
+    "conventions": "ZERO rendering imports, wall checking on all movement, camelCase/PascalCase/UPPER_SNAKE",
+    "files_created": [
+      "javascript/maze.js",
+      "javascript/pacman.js",
+      "javascript/ghost.js",
+      "javascript/game_logic.js"
+    ]
+  }
+}

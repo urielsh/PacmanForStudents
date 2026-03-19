@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM17MX88VM9AWM3S4AEEFVDH",
+  "taskId": "quality-scorer",
+  "invocationKey": "packman-multi-lang-edu:S000009:quality-scorer",
+  "status": "ok",
+  "result": {
+    "criticalIssues": [],
+    "overallScore": 97,
+    "recommendations": [
+      "Some entity files lost a few annotations during the draw() extraction refactoring - consider adding rendering annotations to GamePanel where the draw logic now lives"
+    ],
+    "scores": {
+      "annotations": 90,
+      "bugFixes": 100,
+      "build": 100,
+      "cleanCode": 100
+    }
+  },
+  "startedAt": "2026-03-18T19:44:50.794Z",
+  "finishedAt": "2026-03-18T19:44:50.794Z",
+  "value": {
+    "criticalIssues": [],
+    "overallScore": 97,
+    "recommendations": [
+      "Some entity files lost a few annotations during the draw() extraction refactoring - consider adding rendering annotations to GamePanel where the draw logic now lives"
+    ],
+    "scores": {
+      "annotations": 90,
+      "bugFixes": 100,
+      "build": 100,
+      "cleanCode": 100
+    }
+  }
+}

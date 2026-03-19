@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1712P41JBEDBAZPN35XFWD",
+  "taskId": "quality-scorer",
+  "invocationKey": "packman-multi-lang-edu:S000006:quality-scorer",
+  "stepId": "S000006",
+  "kind": "agent",
+  "title": "Quality score: Phase 1: Java (iteration 1)",
+  "labels": [
+    "iteration-1",
+    "java",
+    "quality-scoring"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1712P41JBEDBAZPN35XFWD/input.json",
+    "outputJsonPath": "tasks/01KM1712P41JBEDBAZPN35XFWD/result.json"
+  },
+  "inputs": {
+    "buildResult": {
+      "buildSuccess": true,
+      "errors": [],
+      "testsFailed": 0,
+      "testsPassed": 18
+    },
+    "checks": [
+      "build",
+      "tests",
+      "bug-fixes",
+      "annotations"
+    ],
+    "iteration": 1,
+    "language": "java",
+    "phase": "Phase 1: Java",
+    "targetQuality": 85
+  }
+}

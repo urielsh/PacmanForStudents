@@ -1,0 +1,74 @@
+---
+/**
+ * Hero.astro - Pacman-themed hero section with animated yellow circle,
+ * tagline, and CTA buttons for the homepage.
+ */
+---
+
+<section class="relative flex flex-col items-center justify-center min-h-[70vh] text-center overflow-hidden">
+  <!-- Animated background dots -->
+  <div class="absolute inset-0 pointer-events-none opacity-10" aria-hidden="true">
+    <div class="absolute top-1/4 left-1/6 w-2 h-2 rounded-full bg-pacman-yellow animate-pulse"></div>
+    <div class="absolute top-1/3 right-1/4 w-2 h-2 rounded-full bg-pacman-yellow animate-pulse delay-100"></div>
+    <div class="absolute bottom-1/3 left-1/3 w-2 h-2 rounded-full bg-pacman-yellow animate-pulse delay-200"></div>
+    <div class="absolute top-2/3 right-1/3 w-2 h-2 rounded-full bg-pacman-yellow animate-pulse delay-300"></div>
+    <div class="absolute bottom-1/4 left-2/3 w-2 h-2 rounded-full bg-pacman-yellow animate-pulse delay-500"></div>
+  </div>
+
+  <!-- Animated Pacman circle -->
+  <div class="relative mb-8">
+    <div
+      class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-pacman-yellow animate-chomp mx-auto"
+      aria-hidden="true"
+    ></div>
+    <!-- Dot trail -->
+    <div class="absolute top-1/2 -translate-y-1/2 left-full ml-4 flex items-center gap-3">
+      <span class="w-2 h-2 rounded-full bg-pacman-yellow inline-block opacity-80"></span>
+      <span class="w-2 h-2 rounded-full bg-pacman-yellow inline-block opacity-60"></span>
+      <span class="w-2 h-2 rounded-full bg-pacman-yellow inline-block opacity-40"></span>
+      <span class="w-3 h-3 rounded-full bg-pacman-yellow inline-block opacity-30"></span>
+    </div>
+    <!-- Ghost trail -->
+    <div class="absolute top-1/2 -translate-y-1/2 right-full mr-4 flex items-center gap-3">
+      <span class="w-5 h-5 rounded-sm bg-ghost-red inline-block opacity-60"></span>
+      <span class="w-5 h-5 rounded-sm bg-ghost-pink inline-block opacity-50"></span>
+      <span class="w-5 h-5 rounded-sm bg-ghost-cyan inline-block opacity-40"></span>
+      <span class="w-5 h-5 rounded-sm bg-ghost-magenta inline-block opacity-30"></span>
+    </div>
+  </div>
+
+  <!-- Title -->
+  <h1 class="font-heading text-pacman-yellow text-xl sm:text-3xl md:text-4xl mb-4 leading-relaxed tracking-wider">
+    PACKMAN
+  </h1>
+
+  <!-- Tagline -->
+  <p class="text-ghost-cyan text-sm sm:text-lg md:text-xl font-heading tracking-wide mb-2 max-w-2xl leading-relaxed">
+    One Game. Five Languages. Infinite Learning.
+  </p>
+
+  <!-- Subtitle -->
+  <p class="text-gray-400 text-sm sm:text-base mb-10 max-w-xl">
+    Explore how the same Pac-Man game is built in Python, JavaScript, TypeScript, Java, and C++.
+    Compare architectures, patterns, and idioms side by side.
+  </p>
+
+  <!-- CTA Buttons -->
+  <div class="flex flex-col sm:flex-row gap-4">
+    <a
+      href="/play"
+      class="font-heading text-sm bg-pacman-yellow text-pacman-black px-8 py-3 rounded hover:bg-yellow-400 transition-colors duration-200 inline-block"
+    >
+      PLAY NOW
+    </a>
+    <a
+      href="/compare"
+      class="font-heading text-sm border-2 border-pacman-yellow text-pacman-yellow px-8 py-3 rounded hover:bg-pacman-yellow hover:text-pacman-black transition-colors duration-200 inline-block"
+    >
+      COMPARE LANGUAGES
+    </a>
+  </div>
+
+  <!-- Maze border decoration -->
+  <div class="absolute bottom-0 left-0 right-0 h-1 bg-wall-blue opacity-50" aria-hidden="true"></div>
+</section>

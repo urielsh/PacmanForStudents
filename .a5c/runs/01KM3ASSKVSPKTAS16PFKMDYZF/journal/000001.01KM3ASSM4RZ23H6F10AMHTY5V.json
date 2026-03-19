@@ -1,0 +1,14 @@
+{
+  "type": "RUN_CREATED",
+  "recordedAt": "2026-03-19T15:18:07.748Z",
+  "data": {
+    "runId": "01KM3ASSKVSPKTAS16PFKMDYZF",
+    "processId": "packman-website",
+    "entrypoint": {
+      "importPath": "../../processes/packman-website.js",
+      "exportName": "process"
+    },
+    "inputsRef": "inputs.json"
+  },
+  "checksum": "20e1a9035ac3169df510613607f5e33a6f8467d54efe4f9b9c9b985eaeae14a7"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "RUN_CREATED",
+  "recordedAt": "2026-03-18T19:10:55.519Z",
+  "data": {
+    "runId": "01KM15QB0MZRKPENC9E1CQFFA2",
+    "processId": "packman-multi-lang-edu",
+    "entrypoint": {
+      "importPath": "../../processes/packman-multi-lang-edu.js",
+      "exportName": "process"
+    },
+    "inputsRef": "inputs.json"
+  },
+  "checksum": "c780d75c98754373020005179d9d0e4b78bbf7c53f215206cac93e9c236c5183"
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1CVJV47HR404Y6DX5RW3KW",
+  "taskId": "implement-game-logic",
+  "invocationKey": "packman-multi-lang-edu:S000030:implement-game-logic",
+  "status": "ok",
+  "result": {
+    "files_created": [
+      "typescript/src/maze.ts",
+      "typescript/src/pacman.ts",
+      "typescript/src/ghost.ts",
+      "typescript/src/game_logic.ts"
+    ],
+    "summary": "TypeScript game logic with typed interfaces, access modifiers, readonly arrays. ZERO rendering imports."
+  },
+  "startedAt": "2026-03-18T21:17:05.335Z",
+  "finishedAt": "2026-03-18T21:17:05.335Z",
+  "value": {
+    "files_created": [
+      "typescript/src/maze.ts",
+      "typescript/src/pacman.ts",
+      "typescript/src/ghost.ts",
+      "typescript/src/game_logic.ts"
+    ],
+    "summary": "TypeScript game logic with typed interfaces, access modifiers, readonly arrays. ZERO rendering imports."
+  }
+}

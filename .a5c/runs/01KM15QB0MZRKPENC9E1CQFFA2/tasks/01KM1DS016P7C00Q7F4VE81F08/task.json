@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1DS016P7C00Q7F4VE81F08",
+  "taskId": "__sdk.breakpoint",
+  "invocationKey": "packman-multi-lang-edu:S000038:__sdk.breakpoint",
+  "stepId": "S000038",
+  "kind": "breakpoint",
+  "title": "breakpoint",
+  "metadata": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": []
+      },
+      "question": "Phase 4 complete (typescript/HTML5 Canvas + Types). Review and approve to proceed?",
+      "title": "Checkpoint 4: typescript Review"
+    },
+    "requestedAt": "2026-03-18T21:31:38.406Z"
+  },
+  "inputs": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": []
+      },
+      "question": "Phase 4 complete (typescript/HTML5 Canvas + Types). Review and approve to proceed?",
+      "title": "Checkpoint 4: typescript Review"
+    },
+    "requestedAt": "2026-03-18T21:31:38.406Z"
+  }
+}

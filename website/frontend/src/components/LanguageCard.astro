@@ -1,0 +1,49 @@
+---
+/**
+ * LanguageCard.astro - Card component for each programming language.
+ * Displays name, icon, description, color accent, and link.
+ */
+interface Props {
+  name: string;
+  icon: string;
+  description: string;
+  color: string;
+  href: string;
+}
+
+const { name, icon, description, color, href } = Astro.props;
+---
+
+<a
+  href={href}
+  class="group relative block border-2 border-wall-blue rounded-lg p-6 hover:border-opacity-80 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+  style={`--accent-color: ${color};`}
+>
+  <!-- Color accent bar at top -->
+  <div
+    class="absolute top-0 left-0 right-0 h-1 rounded-t-lg opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+    style={`background-color: ${color};`}
+    aria-hidden="true"
+  ></div>
+
+  <!-- Icon -->
+  <div class="text-3xl mb-3" set:html={icon} />
+
+  <!-- Name -->
+  <h3
+    class="font-heading text-sm tracking-wide mb-2 transition-colors duration-200"
+    style={`color: ${color};`}
+  >
+    {name}
+  </h3>
+
+  <!-- Description -->
+  <p class="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors duration-200">
+    {description}
+  </p>
+
+  <!-- Arrow indicator -->
+  <div class="mt-4 text-gray-600 group-hover:text-gray-400 transition-colors duration-200 text-sm">
+    Learn more &rarr;
+  </div>
+</a>

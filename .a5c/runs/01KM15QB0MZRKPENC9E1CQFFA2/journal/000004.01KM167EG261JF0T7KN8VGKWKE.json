@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T19:19:43.362Z",
+  "data": {
+    "effectId": "01KM167EFTDK4S87GPED8W4FPZ",
+    "invocationKey": "packman-multi-lang-edu:S000002:fix-java-bugs",
+    "invocationHash": "9dafb5b5e88374da17f94577878f3a1b063fdd3e773c6ca1518b7753922677db",
+    "stepId": "S000002",
+    "taskId": "fix-java-bugs",
+    "kind": "agent",
+    "label": "phase-1",
+    "taskDefRef": "tasks/01KM167EFTDK4S87GPED8W4FPZ/task.json",
+    "labels": [
+      "phase-1",
+      "backend",
+      "bug-fix"
+    ]
+  },
+  "checksum": "4945f757c5f1a1f56e8ae85b1b105eb26800d0b2f2b2b5fccbe5c8ce41bde83e"
+}

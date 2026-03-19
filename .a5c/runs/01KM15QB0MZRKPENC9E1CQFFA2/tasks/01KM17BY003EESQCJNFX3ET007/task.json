@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM17BY003EESQCJNFX3ET007",
+  "taskId": "fix-quality-issues",
+  "invocationKey": "packman-multi-lang-edu:S000007:fix-quality-issues",
+  "stepId": "S000007",
+  "kind": "agent",
+  "title": "Fix quality issues: Phase 1: Java (iteration 1)",
+  "labels": [
+    "fix",
+    "iteration-1",
+    "java"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM17BY003EESQCJNFX3ET007/input.json",
+    "outputJsonPath": "tasks/01KM17BY003EESQCJNFX3ET007/result.json"
+  },
+  "inputs": {
+    "feedback": [
+      "Extract draw() methods from Maze.java, Pacman.java, and Ghost.java into the GamePanel rendering pipeline to eliminate java.awt imports from game logic files. The entity classes should only expose position/state via getters; all Graphics2D drawing should happen in GamePanel.paintComponent().",
+      "Remove import java.awt.* from Maze.java, Pacman.java, Ghost.java after moving draw() methods to GamePanel. Ghost needs a getColor() getter. Maze draw logic moves to GamePanel.",
+      "Keep entity files focused on game logic (position, movement, state) with zero rendering dependencies."
+    ],
+    "iteration": 1,
+    "language": "java",
+    "phase": "Phase 1: Java"
+  }
+}

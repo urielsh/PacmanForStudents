@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T21:34:04.342Z",
+  "data": {
+    "effectId": "01KM1DXEHFNHCPPPG98XKHXQBN",
+    "invocationKey": "packman-multi-lang-edu:S000040:implement-rendering",
+    "invocationHash": "035bf9a1769b4112d79279602ba226e8f34c30e6a31dfbf88d453ee2ca76dd4f",
+    "stepId": "S000040",
+    "taskId": "implement-rendering",
+    "kind": "agent",
+    "label": "phase-5",
+    "taskDefRef": "tasks/01KM1DXEHFNHCPPPG98XKHXQBN/task.json",
+    "labels": [
+      "phase-5",
+      "frontend",
+      "cpp"
+    ]
+  },
+  "checksum": "a6748f67fd3b18303b0a2f5fae837d3f893ed672b575da1e426ea46aab21835f"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-19T15:40:14.810Z",
+  "data": {
+    "effectId": "01KM3C29JRRVR13QC67GQPMKVQ",
+    "invocationKey": "packman-website:S000008:backend-copy-games",
+    "invocationHash": "7bd3bb6e047105a2c84eea08b6c6bf5f3fb2f600a3bd8daf7f6229ca27e41f5e",
+    "stepId": "S000008",
+    "taskId": "backend-copy-games",
+    "kind": "agent",
+    "label": "phase2",
+    "taskDefRef": "tasks/01KM3C29JRRVR13QC67GQPMKVQ/task.json",
+    "labels": [
+      "phase2",
+      "backend",
+      "wave1"
+    ]
+  },
+  "checksum": "b4523aa082de17097c2349f489eaa2ccfbb2bdb8e3d59b9178d87f7088b8da1f"
+}

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-pacman-black text-white min-h-screen;
+  }
+
+  /* Dot animation for loading states */
+  @keyframes chomp {
+    0%, 100% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    50% {
+      clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
+    }
+  }
+
+  .animate-chomp {
+    animation: chomp 0.4s ease-in-out infinite;
+  }
+}

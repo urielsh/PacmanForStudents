@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM167EFTDK4S87GPED8W4FPZ",
+  "taskId": "fix-java-bugs",
+  "invocationKey": "packman-multi-lang-edu:S000002:fix-java-bugs",
+  "stepId": "S000002",
+  "kind": "agent",
+  "title": "Fix 4 Java bugs (wall collision, game-over, color)",
+  "labels": [
+    "backend",
+    "bug-fix",
+    "phase-1"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM167EFTDK4S87GPED8W4FPZ/input.json",
+    "outputJsonPath": "tasks/01KM167EFTDK4S87GPED8W4FPZ/result.json"
+  },
+  "inputs": {
+    "description": "Fix 4 bugs: (1) Pacman.isValidMove must call maze.isWall, (2) Ghost movement must call maze.isWall, (3) GamePanel.update must check gameLogic.isGameOver(), (4) Pinky color must be new Color(0xFF, 0xB8, 0xFF)."
+  }
+}

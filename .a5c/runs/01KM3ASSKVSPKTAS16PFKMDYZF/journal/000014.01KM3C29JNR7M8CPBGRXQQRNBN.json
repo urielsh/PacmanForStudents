@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-19T15:40:14.805Z",
+  "data": {
+    "effectId": "01KM3C29JEXBX823CV14RWM0GJ",
+    "invocationKey": "packman-website:S000007:frontend-scaffold",
+    "invocationHash": "715894aea3fac0454bab579c71ebfb32b7bf0ef3fc9d33a961297e9c2ea9afd4",
+    "stepId": "S000007",
+    "taskId": "frontend-scaffold",
+    "kind": "agent",
+    "label": "phase2",
+    "taskDefRef": "tasks/01KM3C29JEXBX823CV14RWM0GJ/task.json",
+    "labels": [
+      "phase2",
+      "frontend",
+      "wave1"
+    ]
+  },
+  "checksum": "bf220750d1e8b7dd96d5274d2964de267b0564a56ad41e41a1a5e8c41f10b322"
+}

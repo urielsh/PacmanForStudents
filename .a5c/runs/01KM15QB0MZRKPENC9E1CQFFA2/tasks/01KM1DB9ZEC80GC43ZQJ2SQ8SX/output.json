@@ -1,0 +1,1 @@
+{"testFiles": ["maze.test.ts","pacman.test.ts","ghost.test.ts","game_logic.test.ts"], "testsPassed": 57, "testsFailed": 0, "errors": []}

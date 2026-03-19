@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1BZN7V6M57E7F05ZKSHRH7",
+  "taskId": "add-lang-annotations",
+  "invocationKey": "packman-multi-lang-edu:S000023:add-lang-annotations",
+  "status": "ok",
+  "result": {
+    "annotationsPerFile": {
+      "game_logic.js": 2,
+      "game.js": 5,
+      "ghost.js": 2,
+      "maze.js": 2,
+      "pacman.js": 2
+    },
+    "conceptsCovered": [
+      "Game Loop Timing",
+      "Rendering/Drawing",
+      "Input Handling",
+      "Object Movement",
+      "Collision Detection",
+      "Ghost AI"
+    ],
+    "total": 13
+  },
+  "startedAt": "2026-03-18T21:04:25.420Z",
+  "finishedAt": "2026-03-18T21:04:25.420Z",
+  "value": {
+    "annotationsPerFile": {
+      "game_logic.js": 2,
+      "game.js": 5,
+      "ghost.js": 2,
+      "maze.js": 2,
+      "pacman.js": 2
+    },
+    "conceptsCovered": [
+      "Game Loop Timing",
+      "Rendering/Drawing",
+      "Input Handling",
+      "Object Movement",
+      "Collision Detection",
+      "Ghost AI"
+    ],
+    "total": 13
+  }
+}

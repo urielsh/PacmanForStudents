@@ -1,0 +1,19 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-19T15:18:32.902Z",
+  "data": {
+    "effectId": "01KM3ATJ5VVJ1R3V4XZQDX56EE",
+    "invocationKey": "packman-website:S000001:scaffold-dirs",
+    "invocationHash": "31737a79dede72278f87767ea57b2702d42cbebada1b491490fe9183eba50f42",
+    "stepId": "S000001",
+    "taskId": "scaffold-dirs",
+    "kind": "agent",
+    "label": "phase1",
+    "taskDefRef": "tasks/01KM3ATJ5VVJ1R3V4XZQDX56EE/task.json",
+    "labels": [
+      "phase1",
+      "scaffold"
+    ]
+  },
+  "checksum": "7b7f9a6fc9510ba6e5062005792c60cbf04c09e976dba2d413be382513ad0fc6"
+}

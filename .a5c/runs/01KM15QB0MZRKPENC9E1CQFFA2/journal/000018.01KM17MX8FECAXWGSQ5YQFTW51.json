@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T19:44:33.039Z",
+  "data": {
+    "effectId": "01KM17MX88VM9AWM3S4AEEFVDH",
+    "invocationKey": "packman-multi-lang-edu:S000009:quality-scorer",
+    "invocationHash": "7e2fdfbcdaba834eeb39d8dd06b57a55c35a9b15d731d5cf70f705f3a74ddce6",
+    "stepId": "S000009",
+    "taskId": "quality-scorer",
+    "kind": "agent",
+    "label": "quality-scoring",
+    "taskDefRef": "tasks/01KM17MX88VM9AWM3S4AEEFVDH/task.json",
+    "labels": [
+      "quality-scoring",
+      "java",
+      "iteration-2"
+    ]
+  },
+  "checksum": "2eb54a31dc71542154aaec104976897ec958080e2e92163cbe787540b0333266"
+}

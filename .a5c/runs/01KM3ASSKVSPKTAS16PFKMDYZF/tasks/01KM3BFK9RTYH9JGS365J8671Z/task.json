@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM3BFK9RTYH9JGS365J8671Z",
+  "taskId": "write-prd",
+  "invocationKey": "packman-website:S000005:write-prd",
+  "stepId": "S000005",
+  "kind": "agent",
+  "title": "PM: Write website PRD and acceptance criteria",
+  "labels": [
+    "phase1",
+    "pm"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM3BFK9RTYH9JGS365J8671Z/input.json",
+    "outputJsonPath": "tasks/01KM3BFK9RTYH9JGS365J8671Z/result.json"
+  },
+  "inputs": {
+    "projectRoot": "/home/urisha/Desktop/workspace/Packman",
+    "websiteRoot": "/home/urisha/Desktop/workspace/Packman/website"
+  }
+}

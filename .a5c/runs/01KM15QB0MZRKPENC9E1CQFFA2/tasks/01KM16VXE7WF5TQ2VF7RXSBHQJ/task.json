@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM16VXE7WF5TQ2VF7RXSBHQJ",
+  "taskId": "write-java-tests",
+  "invocationKey": "packman-multi-lang-edu:S000004:write-java-tests",
+  "stepId": "S000004",
+  "kind": "agent",
+  "title": "Write Java JUnit 4 test suite",
+  "labels": [
+    "phase-1",
+    "qa",
+    "tests"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM16VXE7WF5TQ2VF7RXSBHQJ/input.json",
+    "outputJsonPath": "tasks/01KM16VXE7WF5TQ2VF7RXSBHQJ/result.json"
+  },
+  "inputs": {
+    "description": "Write JUnit 4 tests for Maze, Pacman, Ghost, and GameLogic. Tests must verify wall collision enforcement, pellet scoring, ghost collision, and game over state."
+  }
+}

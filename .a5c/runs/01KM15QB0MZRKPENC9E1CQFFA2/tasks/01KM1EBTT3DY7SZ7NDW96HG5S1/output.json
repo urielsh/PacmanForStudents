@@ -1,0 +1,1 @@
+{"files_created": ["cpp/CMakeLists.txt","cpp/run.sh","cpp/.clang-tidy","cpp/tests/test_maze.cpp","cpp/tests/test_pacman.cpp","cpp/tests/test_ghost.cpp","cpp/tests/test_game_logic.cpp"], "build": "success", "testsPassed": 26, "testsFailed": 0}

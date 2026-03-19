@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1BPQGZFXG417ZTB1EJPRBF",
+  "taskId": "__sdk.breakpoint",
+  "invocationKey": "packman-multi-lang-edu:S000020:__sdk.breakpoint",
+  "stepId": "S000020",
+  "kind": "breakpoint",
+  "title": "breakpoint",
+  "metadata": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": []
+      },
+      "question": "Phase 2 complete (python/Pygame). Review and approve to proceed?",
+      "title": "Checkpoint 2: python Review"
+    },
+    "requestedAt": "2026-03-18T20:55:27.006Z"
+  },
+  "inputs": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": []
+      },
+      "question": "Phase 2 complete (python/Pygame). Review and approve to proceed?",
+      "title": "Checkpoint 2: python Review"
+    },
+    "requestedAt": "2026-03-18T20:55:27.006Z"
+  }
+}

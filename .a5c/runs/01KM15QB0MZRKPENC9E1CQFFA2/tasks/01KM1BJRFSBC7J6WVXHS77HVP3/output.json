@@ -1,0 +1,5 @@
+{
+  "status": "success",
+  "file": "python/README.md",
+  "sections": ["Title", "Prerequisites", "Quick Start", "Architecture", "Things to Notice", "Exercises", "File Reference", "Cross-Language Notes"]
+}

@@ -1,0 +1,1 @@
+{"files_created": ["cpp/maze.h","cpp/maze.cpp","cpp/pacman.h","cpp/pacman.cpp","cpp/ghost.h","cpp/ghost.cpp","cpp/game_logic.h","cpp/game_logic.cpp"], "compilation": "g++ clean with zero warnings"}

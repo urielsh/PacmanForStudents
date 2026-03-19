@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM15YE8AM22J0FMC3NMSFG4D",
+  "taskId": "restructure-repo",
+  "invocationKey": "packman-multi-lang-edu:S000001:restructure-repo",
+  "stepId": "S000001",
+  "kind": "agent",
+  "title": "Restructure repository and create shared specs",
+  "labels": [
+    "devops",
+    "phase-1",
+    "restructure"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM15YE8AM22J0FMC3NMSFG4D/input.json",
+    "outputJsonPath": "tasks/01KM15YE8AM22J0FMC3NMSFG4D/result.json"
+  },
+  "inputs": {
+    "description": "Move Java code to java/ subdirectory, create skeleton dirs for python/, javascript/, typescript/, cpp/, shared/, docs/. Create java/run.sh. Update shared/maze_layout.json and shared/game_constants.json with canonical specs from PRD."
+  }
+}

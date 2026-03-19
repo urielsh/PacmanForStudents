@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM17BY003EESQCJNFX3ET007",
+  "taskId": "fix-quality-issues",
+  "invocationKey": "packman-multi-lang-edu:S000007:fix-quality-issues",
+  "status": "ok",
+  "result": {
+    "buildSuccess": true,
+    "filesModified": [
+      "Pacman.java",
+      "Ghost.java",
+      "Maze.java",
+      "GamePanel.java",
+      "GhostTest.java",
+      "GameLogicTest.java"
+    ],
+    "summary": "Extracted all draw() methods from Pacman.java, Ghost.java, Maze.java into GamePanel.paintComponent(). Removed java.awt imports from all 3 entity files. Ghost now stores RGB ints instead of Color. Added getters (getSize, getColorR/G/B, getWidth, getHeight). All 18 tests pass. BUILD SUCCESS.",
+    "testsFailed": 0,
+    "testsPassed": 18
+  },
+  "startedAt": "2026-03-18T19:44:02.895Z",
+  "finishedAt": "2026-03-18T19:44:02.895Z",
+  "value": {
+    "buildSuccess": true,
+    "filesModified": [
+      "Pacman.java",
+      "Ghost.java",
+      "Maze.java",
+      "GamePanel.java",
+      "GhostTest.java",
+      "GameLogicTest.java"
+    ],
+    "summary": "Extracted all draw() methods from Pacman.java, Ghost.java, Maze.java into GamePanel.paintComponent(). Removed java.awt imports from all 3 entity files. Ghost now stores RGB ints instead of Color. Added getters (getSize, getColorR/G/B, getWidth, getHeight). All 18 tests pass. BUILD SUCCESS.",
+    "testsFailed": 0,
+    "testsPassed": 18
+  }
+}

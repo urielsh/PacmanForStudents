@@ -1,0 +1,18 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T21:50:04.211Z",
+  "data": {
+    "effectId": "01KM1ETQXCBQP8EWG3MQPBJGC8",
+    "invocationKey": "packman-multi-lang-edu:S000047:__sdk.breakpoint",
+    "invocationHash": "f1ee6f96ea0dfe2595ba8a631033222f46145203780f93b6bff0d68d9fd49039",
+    "stepId": "S000047",
+    "taskId": "__sdk.breakpoint",
+    "kind": "breakpoint",
+    "label": "breakpoint",
+    "taskDefRef": "tasks/01KM1ETQXCBQP8EWG3MQPBJGC8/task.json",
+    "labels": [
+      "breakpoint"
+    ]
+  },
+  "checksum": "62688621f591c815210f68b56ac0ed2005e72375cb597f3b1bdb5a5d7d805b82"
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1GWK1BC98W5N7WVHKHMR4W",
+  "taskId": "build-test-lang",
+  "invocationKey": "packman-multi-lang-edu:S000053:build-test-lang",
+  "stepId": "S000053",
+  "kind": "agent",
+  "title": "Build and test java (iteration 1)",
+  "labels": [
+    "iteration-1",
+    "java",
+    "quality-gate"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1GWK1BC98W5N7WVHKHMR4W/input.json",
+    "outputJsonPath": "tasks/01KM1GWK1BC98W5N7WVHKHMR4W/result.json"
+  },
+  "inputs": {
+    "iteration": 1,
+    "language": "java"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1E27ZKK7HCHNNBH6V93T0T",
+  "taskId": "add-lang-annotations",
+  "invocationKey": "packman-multi-lang-edu:S000041:add-lang-annotations",
+  "status": "ok",
+  "result": {
+    "files": {
+      "game_logic.cpp": 3,
+      "game_logic.h": 2,
+      "game_panel.cpp": 6,
+      "game_panel.h": 2,
+      "ghost.cpp": 3,
+      "ghost.h": 2,
+      "main.cpp": 4,
+      "maze.cpp": 3,
+      "maze.h": 2,
+      "pacman.cpp": 3,
+      "pacman.h": 2
+    },
+    "total": 32
+  },
+  "startedAt": "2026-03-18T21:41:50.603Z",
+  "finishedAt": "2026-03-18T21:41:50.603Z",
+  "value": {
+    "files": {
+      "game_logic.cpp": 3,
+      "game_logic.h": 2,
+      "game_panel.cpp": 6,
+      "game_panel.h": 2,
+      "ghost.cpp": 3,
+      "ghost.h": 2,
+      "main.cpp": 4,
+      "maze.cpp": 3,
+      "maze.h": 2,
+      "pacman.cpp": 3,
+      "pacman.h": 2
+    },
+    "total": 32
+  }
+}

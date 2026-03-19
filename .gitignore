@@ -1,0 +1,32 @@
+# Maven
+target/
+*.jar
+*.war
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Classes
+*.class
+*.classpath
+
+# Build files
+build/
+dist/
+
+# Website build artifacts
+website/frontend/node_modules/
+website/frontend/dist/
+website/frontend/.astro/
+website/backend/data/snippets.json
+
+# WASM build artifacts
+website/frontend/public/game/cpp/*.wasm
+website/frontend/public/game/cpp/*.js
+website/frontend/public/game/python/
+website/frontend/public/game/java/

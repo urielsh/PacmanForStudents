@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1CYFA4ZMCMPT9K7B9C1D50",
+  "taskId": "implement-rendering",
+  "invocationKey": "packman-multi-lang-edu:S000031:implement-rendering",
+  "stepId": "S000031",
+  "kind": "agent",
+  "title": "Implement typescript rendering and game loop",
+  "labels": [
+    "frontend",
+    "phase-4",
+    "typescript"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1CYFA4ZMCMPT9K7B9C1D50/input.json",
+    "outputJsonPath": "tasks/01KM1CYFA4ZMCMPT9K7B9C1D50/result.json"
+  },
+  "inputs": {
+    "framework": "HTML5 Canvas + Types",
+    "language": "typescript",
+    "phase": 4
+  }
+}

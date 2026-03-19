@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1DB9ZEC80GC43ZQJ2SQ8SX",
+  "taskId": "write-lang-tests",
+  "invocationKey": "packman-multi-lang-edu:S000034:write-lang-tests",
+  "status": "ok",
+  "result": {
+    "errors": [],
+    "testFiles": [
+      "maze.test.ts",
+      "pacman.test.ts",
+      "ghost.test.ts",
+      "game_logic.test.ts"
+    ],
+    "testsFailed": 0,
+    "testsPassed": 57
+  },
+  "startedAt": "2026-03-18T21:28:12.766Z",
+  "finishedAt": "2026-03-18T21:28:12.766Z",
+  "value": {
+    "errors": [],
+    "testFiles": [
+      "maze.test.ts",
+      "pacman.test.ts",
+      "ghost.test.ts",
+      "game_logic.test.ts"
+    ],
+    "testsFailed": 0,
+    "testsPassed": 57
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1GSAD6KW4A9B04X9JN9W3B",
+  "taskId": "__sdk.breakpoint",
+  "invocationKey": "packman-multi-lang-edu:S000052:__sdk.breakpoint",
+  "stepId": "S000052",
+  "kind": "breakpoint",
+  "title": "breakpoint",
+  "metadata": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": []
+      },
+      "question": "Phase 6 complete (launcher + 6 comparison docs + setup script + root README). Review and approve for final verification?",
+      "title": "Checkpoint 6: Documentation Review"
+    },
+    "requestedAt": "2026-03-18T22:24:14.757Z"
+  },
+  "inputs": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": []
+      },
+      "question": "Phase 6 complete (launcher + 6 comparison docs + setup script + root README). Review and approve for final verification?",
+      "title": "Checkpoint 6: Documentation Review"
+    },
+    "requestedAt": "2026-03-18T22:24:14.757Z"
+  }
+}

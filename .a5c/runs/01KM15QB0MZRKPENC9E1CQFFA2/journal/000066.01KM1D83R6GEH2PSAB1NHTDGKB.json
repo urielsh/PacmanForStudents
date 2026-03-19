@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T21:22:25.158Z",
+  "data": {
+    "effectId": "01KM1D83QYQQNNEC4WJYHTFT29",
+    "invocationKey": "packman-multi-lang-edu:S000033:build-lang-infra",
+    "invocationHash": "7df1f559430d87807e476415679bc1f3b282313363f1bdaa62976aec43c6755f",
+    "stepId": "S000033",
+    "taskId": "build-lang-infra",
+    "kind": "agent",
+    "label": "phase-4",
+    "taskDefRef": "tasks/01KM1D83QYQQNNEC4WJYHTFT29/task.json",
+    "labels": [
+      "phase-4",
+      "devops",
+      "typescript"
+    ]
+  },
+  "checksum": "f5cf70177d3d9e8d0ab1a6896bb0d049415aab85f1668908ba37604fb2152b97"
+}

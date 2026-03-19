@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1ENB27Y8EWG7G8HWKTA7VN",
+  "taskId": "write-lang-readme",
+  "invocationKey": "packman-multi-lang-edu:S000046:write-lang-readme",
+  "stepId": "S000046",
+  "kind": "agent",
+  "title": "Write cpp README",
+  "labels": [
+    "cpp",
+    "readme"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1ENB27Y8EWG7G8HWKTA7VN/input.json",
+    "outputJsonPath": "tasks/01KM1ENB27Y8EWG7G8HWKTA7VN/result.json"
+  },
+  "inputs": {
+    "exercises": [
+      "Implement smart pointers for game objects",
+      "Add move semantics for Ghost vector",
+      "Profile with valgrind and optimize"
+    ],
+    "highlights": [
+      "Manual memory management",
+      "Header/source separation",
+      "RAII pattern for SDL resources",
+      "CMake build system"
+    ],
+    "language": "cpp"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T22:01:52.683Z",
+  "data": {
+    "effectId": "01KM1FGBS4YCDQC1SW24R7ZTDA",
+    "invocationKey": "packman-multi-lang-edu:S000048:build-launcher",
+    "invocationHash": "dfbfbc0e9f6307c16b35f4ec6092e52ea3d64f3b3c80096fa588d580e8063864",
+    "stepId": "S000048",
+    "taskId": "build-launcher",
+    "kind": "agent",
+    "label": "phase-6",
+    "taskDefRef": "tasks/01KM1FGBS4YCDQC1SW24R7ZTDA/task.json",
+    "labels": [
+      "phase-6",
+      "launcher"
+    ]
+  },
+  "checksum": "f73ca47bf40c0692555f214e45c1671e618c697fb2da3f7dd285849817a9afef"
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1G1H6QJECMTX1YWNBXD2QA",
+  "taskId": "write-root-readme",
+  "invocationKey": "packman-multi-lang-edu:S000051:write-root-readme",
+  "stepId": "S000051",
+  "kind": "agent",
+  "title": "Rewrite root README.md",
+  "labels": [
+    "documentation",
+    "phase-6"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1G1H6QJECMTX1YWNBXD2QA/input.json",
+    "outputJsonPath": "tasks/01KM1G1H6QJECMTX1YWNBXD2QA/result.json"
+  },
+  "inputs": {
+    "description": "Rewrite README.md as the main educational guide and learning path. Include project overview, how to use launcher, learning path, and links to all comparison docs."
+  }
+}

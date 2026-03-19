@@ -1,0 +1,1 @@
+{"annotationsPerFile": {"maze.js": 2, "pacman.js": 2, "ghost.js": 2, "game_logic.js": 2, "game.js": 5}, "total": 13, "conceptsCovered": ["Game Loop Timing","Rendering/Drawing","Input Handling","Object Movement","Collision Detection","Ghost AI"]}

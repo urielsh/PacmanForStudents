@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1BJRFSBC7J6WVXHS77HVP3",
+  "taskId": "write-lang-readme",
+  "invocationKey": "packman-multi-lang-edu:S000019:write-lang-readme",
+  "status": "ok",
+  "result": {
+    "file": "python/README.md",
+    "sections": [
+      "Title",
+      "Prerequisites",
+      "Quick Start",
+      "Architecture",
+      "Things to Notice",
+      "Exercises",
+      "File Reference",
+      "Cross-Language Notes"
+    ],
+    "status": "success"
+  },
+  "startedAt": "2026-03-18T20:55:23.274Z",
+  "finishedAt": "2026-03-18T20:55:23.274Z",
+  "value": {
+    "file": "python/README.md",
+    "sections": [
+      "Title",
+      "Prerequisites",
+      "Quick Start",
+      "Architecture",
+      "Things to Notice",
+      "Exercises",
+      "File Reference",
+      "Cross-Language Notes"
+    ],
+    "status": "success"
+  }
+}

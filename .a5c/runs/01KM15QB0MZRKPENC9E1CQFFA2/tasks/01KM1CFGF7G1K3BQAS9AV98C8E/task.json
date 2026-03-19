@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1CFGF7G1K3BQAS9AV98C8E",
+  "taskId": "quality-scorer",
+  "invocationKey": "packman-multi-lang-edu:S000027:quality-scorer",
+  "stepId": "S000027",
+  "kind": "agent",
+  "title": "Quality score: Phase 3: javascript (iteration 1)",
+  "labels": [
+    "iteration-1",
+    "javascript",
+    "quality-scoring"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1CFGF7G1K3BQAS9AV98C8E/input.json",
+    "outputJsonPath": "tasks/01KM1CFGF7G1K3BQAS9AV98C8E/result.json"
+  },
+  "inputs": {
+    "buildResult": {
+      "buildSuccess": true,
+      "errors": [],
+      "testsFailed": 0,
+      "testsPassed": 38
+    },
+    "checks": [
+      "build",
+      "tests",
+      "annotations",
+      "behavior-match"
+    ],
+    "iteration": 1,
+    "language": "javascript",
+    "phase": "Phase 3: javascript",
+    "targetQuality": 85
+  }
+}

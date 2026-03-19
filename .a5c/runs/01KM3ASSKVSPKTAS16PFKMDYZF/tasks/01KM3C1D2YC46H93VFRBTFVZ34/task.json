@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM3C1D2YC46H93VFRBTFVZ34",
+  "taskId": "__sdk.breakpoint",
+  "invocationKey": "packman-website:S000006:__sdk.breakpoint",
+  "stepId": "S000006",
+  "kind": "breakpoint",
+  "title": "breakpoint",
+  "metadata": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": [
+          {
+            "format": "markdown",
+            "label": "ADR-001",
+            "path": "/home/urisha/Desktop/workspace/Packman/website/docs/decisions/ADR-001-astro-framework.md"
+          },
+          {
+            "format": "markdown",
+            "label": "ADR-002",
+            "path": "/home/urisha/Desktop/workspace/Packman/website/docs/decisions/ADR-002-wasm-strategy.md"
+          }
+        ]
+      },
+      "question": "Phase 1 complete: Directory structure created, ADRs written, PRD defined. Review and approve to start parallel development?",
+      "title": "Phase 1: Foundation Review"
+    },
+    "requestedAt": "2026-03-19T15:39:45.629Z"
+  },
+  "inputs": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": [
+          {
+            "format": "markdown",
+            "label": "ADR-001",
+            "path": "/home/urisha/Desktop/workspace/Packman/website/docs/decisions/ADR-001-astro-framework.md"
+          },
+          {
+            "format": "markdown",
+            "label": "ADR-002",
+            "path": "/home/urisha/Desktop/workspace/Packman/website/docs/decisions/ADR-002-wasm-strategy.md"
+          }
+        ]
+      },
+      "question": "Phase 1 complete: Directory structure created, ADRs written, PRD defined. Review and approve to start parallel development?",
+      "title": "Phase 1: Foundation Review"
+    },
+    "requestedAt": "2026-03-19T15:39:45.629Z"
+  }
+}

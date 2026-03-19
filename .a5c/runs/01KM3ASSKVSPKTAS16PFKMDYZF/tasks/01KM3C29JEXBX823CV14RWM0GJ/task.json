@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM3C29JEXBX823CV14RWM0GJ",
+  "taskId": "frontend-scaffold",
+  "invocationKey": "packman-website:S000007:frontend-scaffold",
+  "stepId": "S000007",
+  "kind": "agent",
+  "title": "Frontend: Init Astro + Tailwind + React + BaseLayout",
+  "labels": [
+    "frontend",
+    "phase2",
+    "wave1"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM3C29JEXBX823CV14RWM0GJ/input.json",
+    "outputJsonPath": "tasks/01KM3C29JEXBX823CV14RWM0GJ/result.json"
+  },
+  "inputs": {
+    "projectRoot": "/home/urisha/Desktop/workspace/Packman",
+    "websiteRoot": "/home/urisha/Desktop/workspace/Packman/website"
+  }
+}

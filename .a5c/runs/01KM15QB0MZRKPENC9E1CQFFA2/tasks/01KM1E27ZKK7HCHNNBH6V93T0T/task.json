@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1E27ZKK7HCHNNBH6V93T0T",
+  "taskId": "add-lang-annotations",
+  "invocationKey": "packman-multi-lang-edu:S000041:add-lang-annotations",
+  "stepId": "S000041",
+  "kind": "agent",
+  "title": "Add educational annotations to cpp",
+  "labels": [
+    "annotations",
+    "cpp",
+    "phase-5"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1E27ZKK7HCHNNBH6V93T0T/input.json",
+    "outputJsonPath": "tasks/01KM1E27ZKK7HCHNNBH6V93T0T/result.json"
+  },
+  "inputs": {
+    "language": "cpp",
+    "phase": 5,
+    "priorLanguages": [
+      "python",
+      "javascript",
+      "typescript",
+      "java"
+    ]
+  }
+}

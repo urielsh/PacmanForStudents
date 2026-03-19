@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1DB9ZEC80GC43ZQJ2SQ8SX",
+  "taskId": "write-lang-tests",
+  "invocationKey": "packman-multi-lang-edu:S000034:write-lang-tests",
+  "stepId": "S000034",
+  "kind": "agent",
+  "title": "Write typescript test suite",
+  "labels": [
+    "phase-4",
+    "qa",
+    "typescript"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1DB9ZEC80GC43ZQJ2SQ8SX/input.json",
+    "outputJsonPath": "tasks/01KM1DB9ZEC80GC43ZQJ2SQ8SX/result.json"
+  },
+  "inputs": {
+    "framework": "HTML5 Canvas + Types",
+    "language": "typescript",
+    "phase": 4
+  }
+}

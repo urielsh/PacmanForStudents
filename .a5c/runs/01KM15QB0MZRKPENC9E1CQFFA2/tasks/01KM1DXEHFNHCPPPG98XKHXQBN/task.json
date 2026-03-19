@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1DXEHFNHCPPPG98XKHXQBN",
+  "taskId": "implement-rendering",
+  "invocationKey": "packman-multi-lang-edu:S000040:implement-rendering",
+  "stepId": "S000040",
+  "kind": "agent",
+  "title": "Implement cpp rendering and game loop",
+  "labels": [
+    "cpp",
+    "frontend",
+    "phase-5"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1DXEHFNHCPPPG98XKHXQBN/input.json",
+    "outputJsonPath": "tasks/01KM1DXEHFNHCPPPG98XKHXQBN/result.json"
+  },
+  "inputs": {
+    "framework": "SDL2",
+    "language": "cpp",
+    "phase": 5
+  }
+}

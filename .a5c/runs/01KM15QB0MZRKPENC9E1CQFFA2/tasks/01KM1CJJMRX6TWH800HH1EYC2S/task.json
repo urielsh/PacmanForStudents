@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1CJJMRX6TWH800HH1EYC2S",
+  "taskId": "write-lang-readme",
+  "invocationKey": "packman-multi-lang-edu:S000028:write-lang-readme",
+  "stepId": "S000028",
+  "kind": "agent",
+  "title": "Write javascript README",
+  "labels": [
+    "javascript",
+    "readme"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1CJJMRX6TWH800HH1EYC2S/input.json",
+    "outputJsonPath": "tasks/01KM1CJJMRX6TWH800HH1EYC2S/result.json"
+  },
+  "inputs": {
+    "exercises": [
+      "Add touch controls for mobile",
+      "Implement local storage high scores",
+      "Add CSS animations for game over"
+    ],
+    "highlights": [
+      "Event-driven with requestAnimationFrame",
+      "Browser runtime",
+      "Prototype-based OOP",
+      "No compilation"
+    ],
+    "language": "javascript"
+  }
+}

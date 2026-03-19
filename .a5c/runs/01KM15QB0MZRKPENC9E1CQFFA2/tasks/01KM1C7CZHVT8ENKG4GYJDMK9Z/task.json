@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1C7CZHVT8ENKG4GYJDMK9Z",
+  "taskId": "build-lang-infra",
+  "invocationKey": "packman-multi-lang-edu:S000024:build-lang-infra",
+  "stepId": "S000024",
+  "kind": "agent",
+  "title": "Build javascript infrastructure",
+  "labels": [
+    "devops",
+    "javascript",
+    "phase-3"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1C7CZHVT8ENKG4GYJDMK9Z/input.json",
+    "outputJsonPath": "tasks/01KM1C7CZHVT8ENKG4GYJDMK9Z/result.json"
+  },
+  "inputs": {
+    "framework": "HTML5 Canvas",
+    "language": "javascript",
+    "phase": 3
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-19T15:30:02.176Z",
+  "data": {
+    "effectId": "01KM3BFK9RTYH9JGS365J8671Z",
+    "invocationKey": "packman-website:S000005:write-prd",
+    "invocationHash": "205296df72df23f80ce3e4f89a9123cdf19d86de0873b7779da4dc44d1cf37ea",
+    "stepId": "S000005",
+    "taskId": "write-prd",
+    "kind": "agent",
+    "label": "phase1",
+    "taskDefRef": "tasks/01KM3BFK9RTYH9JGS365J8671Z/task.json",
+    "labels": [
+      "phase1",
+      "pm"
+    ]
+  },
+  "checksum": "a3527b763cf8e6ad7182b7b74d4b8f8375ebe60fc3d3e987543efb60ee2eb24e"
+}

@@ -1,0 +1,1 @@
+{"status": "success", "file": "setup.sh", "checks": 15, "features": ["ANSI colors","apt-get install","pip3 install","summary"]}

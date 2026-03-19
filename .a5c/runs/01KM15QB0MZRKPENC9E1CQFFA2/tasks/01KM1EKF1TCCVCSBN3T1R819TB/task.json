@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1EKF1TCCVCSBN3T1R819TB",
+  "taskId": "write-lang-tests",
+  "invocationKey": "packman-multi-lang-edu:S000043:write-lang-tests",
+  "stepId": "S000043",
+  "kind": "agent",
+  "title": "Write cpp test suite",
+  "labels": [
+    "cpp",
+    "phase-5",
+    "qa"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1EKF1TCCVCSBN3T1R819TB/input.json",
+    "outputJsonPath": "tasks/01KM1EKF1TCCVCSBN3T1R819TB/result.json"
+  },
+  "inputs": {
+    "framework": "SDL2",
+    "language": "cpp",
+    "phase": 5
+  }
+}

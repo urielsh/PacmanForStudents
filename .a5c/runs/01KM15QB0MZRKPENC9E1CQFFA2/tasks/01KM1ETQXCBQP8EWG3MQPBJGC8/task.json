@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1ETQXCBQP8EWG3MQPBJGC8",
+  "taskId": "__sdk.breakpoint",
+  "invocationKey": "packman-multi-lang-edu:S000047:__sdk.breakpoint",
+  "stepId": "S000047",
+  "kind": "breakpoint",
+  "title": "breakpoint",
+  "metadata": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": []
+      },
+      "question": "Phase 5 complete (cpp/SDL2). Review and approve to proceed?",
+      "title": "Checkpoint 5: cpp Review"
+    },
+    "requestedAt": "2026-03-18T21:50:04.204Z"
+  },
+  "inputs": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": []
+      },
+      "question": "Phase 5 complete (cpp/SDL2). Review and approve to proceed?",
+      "title": "Checkpoint 5: cpp Review"
+    },
+    "requestedAt": "2026-03-18T21:50:04.204Z"
+  }
+}

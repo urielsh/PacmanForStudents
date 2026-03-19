@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM17M6Q4FEREZ2RN6N8F1XH9",
+  "taskId": "build-test-java",
+  "invocationKey": "packman-multi-lang-edu:S000008:build-test-java",
+  "status": "ok",
+  "result": {
+    "buildSuccess": true,
+    "errors": [],
+    "testsFailed": 0,
+    "testsPassed": 18
+  },
+  "startedAt": "2026-03-18T19:44:25.483Z",
+  "finishedAt": "2026-03-18T19:44:25.483Z",
+  "value": {
+    "buildSuccess": true,
+    "errors": [],
+    "testsFailed": 0,
+    "testsPassed": 18
+  }
+}

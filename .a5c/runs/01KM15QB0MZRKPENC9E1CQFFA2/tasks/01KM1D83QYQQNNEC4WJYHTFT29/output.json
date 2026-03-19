@@ -1,0 +1,1 @@
+{"files_created": ["typescript/tsconfig.json","typescript/package.json","typescript/vitest.config.ts","typescript/run.sh"], "validation": {"tsc": "PASS", "esbuild": "PASS"}}

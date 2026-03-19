@@ -1,0 +1,17 @@
+{
+  "name": "pacman-typescript",
+  "version": "1.0.0",
+  "description": "Educational Pacman - TypeScript/HTML5 Canvas implementation",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/game.ts --bundle --outfile=dist/bundle.js --format=iife",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --reporter verbose",
+    "start": "npm run build && xdg-open index.html || open index.html"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "esbuild": "^0.20.0"
+  }
+}

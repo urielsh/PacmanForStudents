@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T19:44:09.964Z",
+  "data": {
+    "effectId": "01KM17M6Q4FEREZ2RN6N8F1XH9",
+    "invocationKey": "packman-multi-lang-edu:S000008:build-test-java",
+    "invocationHash": "4760c02ddbc4cf73b72af99424e698b30675194028afea78437a1d0b8af81f2f",
+    "stepId": "S000008",
+    "taskId": "build-test-java",
+    "kind": "agent",
+    "label": "quality-gate",
+    "taskDefRef": "tasks/01KM17M6Q4FEREZ2RN6N8F1XH9/task.json",
+    "labels": [
+      "quality-gate",
+      "java",
+      "iteration-2"
+    ]
+  },
+  "checksum": "a25ff002424f6d2ca6340204982f68137c6f7bcdda27696a18206aa37e93079a"
+}

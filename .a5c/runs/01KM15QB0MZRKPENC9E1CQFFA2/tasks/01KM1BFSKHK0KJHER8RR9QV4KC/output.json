@@ -1,0 +1,15 @@
+{
+  "overallScore": 98,
+  "scores": {
+    "buildTests": 100,
+    "annotations": 95,
+    "behaviorMatch": 97,
+    "separationOfConcerns": 100,
+    "namingConventions": 98
+  },
+  "recommendations": [
+    "Annotations: Add cross-language references to JavaScript/TypeScript/C++ in annotation blocks (currently Java-only)",
+    "Behavior Match: Align ghost eye rendering offsets with Java reference for pixel-identical visuals"
+  ],
+  "criticalIssues": []
+}

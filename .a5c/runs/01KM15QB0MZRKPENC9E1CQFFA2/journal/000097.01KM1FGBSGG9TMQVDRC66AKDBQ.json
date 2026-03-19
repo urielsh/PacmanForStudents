@@ -1,0 +1,19 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T22:01:52.688Z",
+  "data": {
+    "effectId": "01KM1FGBSDKA9R0A97MZJNT7YB",
+    "invocationKey": "packman-multi-lang-edu:S000049:write-comparison-docs",
+    "invocationHash": "8272538d2d8bd052b4ee2d619a762335ccf9143405632bb092b79dedd7f434e6",
+    "stepId": "S000049",
+    "taskId": "write-comparison-docs",
+    "kind": "agent",
+    "label": "phase-6",
+    "taskDefRef": "tasks/01KM1FGBSDKA9R0A97MZJNT7YB/task.json",
+    "labels": [
+      "phase-6",
+      "documentation"
+    ]
+  },
+  "checksum": "7d86b5ba9b65688bd41caa5a1162c9b3aa5b95a13e146c27400d9fd1f118716d"
+}

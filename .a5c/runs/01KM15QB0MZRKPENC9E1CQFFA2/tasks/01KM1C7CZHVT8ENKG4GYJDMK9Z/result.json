@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1C7CZHVT8ENKG4GYJDMK9Z",
+  "taskId": "build-lang-infra",
+  "invocationKey": "packman-multi-lang-edu:S000024:build-lang-infra",
+  "status": "ok",
+  "result": {
+    "files_created": [
+      "javascript/run.sh",
+      "javascript/package.json"
+    ],
+    "summary": "run.sh opens browser, package.json with Jest for testing"
+  },
+  "startedAt": "2026-03-18T21:05:19.954Z",
+  "finishedAt": "2026-03-18T21:05:19.954Z",
+  "value": {
+    "files_created": [
+      "javascript/run.sh",
+      "javascript/package.json"
+    ],
+    "summary": "run.sh opens browser, package.json with Jest for testing"
+  }
+}

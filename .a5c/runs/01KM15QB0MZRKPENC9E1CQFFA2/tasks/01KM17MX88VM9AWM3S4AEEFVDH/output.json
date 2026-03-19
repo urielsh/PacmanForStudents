@@ -1,0 +1,1 @@
+{"overallScore": 97, "scores": {"build": 100, "bugFixes": 100, "annotations": 90, "cleanCode": 100}, "recommendations": ["Some entity files lost a few annotations during the draw() extraction refactoring - consider adding rendering annotations to GamePanel where the draw logic now lives"], "criticalIssues": []}

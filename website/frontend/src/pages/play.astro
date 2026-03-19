@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GameEmbed from '../components/GameEmbed.tsx';
+---
+
+<BaseLayout title="Play Packman">
+  <div class="py-4">
+    <!-- Page header -->
+    <div class="text-center mb-8">
+      <h1 class="font-heading text-pacman-yellow text-xl sm:text-2xl mb-3 tracking-wider">
+        PLAY PACKMAN
+      </h1>
+      <p class="text-gray-400 text-sm max-w-lg mx-auto">
+        Play the same Pac-Man game implemented in different languages.
+        Switch between tabs to compare how each version feels.
+      </p>
+    </div>
+
+    <!-- Game embed (React island with client:load) -->
+    <GameEmbed client:load />
+
+    <!-- Info section below game -->
+    <div class="mt-12 max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+      <div class="border border-wall-blue rounded-lg p-4">
+        <div class="text-pacman-yellow text-lg mb-2">&#127918;</div>
+        <h3 class="font-heading text-xs text-gray-300 mb-2">SAME GAME</h3>
+        <p class="text-gray-500 text-xs">
+          Identical maze, mechanics, and ghost AI across every language.
+        </p>
+      </div>
+      <div class="border border-wall-blue rounded-lg p-4">
+        <div class="text-pacman-yellow text-lg mb-2">&#128187;</div>
+        <h3 class="font-heading text-xs text-gray-300 mb-2">DIFFERENT CODE</h3>
+        <p class="text-gray-500 text-xs">
+          Each implementation uses the language's natural idioms and patterns.
+        </p>
+      </div>
+      <div class="border border-wall-blue rounded-lg p-4">
+        <div class="text-pacman-yellow text-lg mb-2">&#128218;</div>
+        <h3 class="font-heading text-xs text-gray-300 mb-2">DEEP LEARNING</h3>
+        <p class="text-gray-500 text-xs">
+          Compare source code, architecture, and design decisions side by side.
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

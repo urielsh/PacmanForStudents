@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1GWK2315VX32D1Q9A9SJDA",
+  "taskId": "build-test-lang",
+  "invocationKey": "packman-multi-lang-edu:S000057:build-test-lang",
+  "stepId": "S000057",
+  "kind": "agent",
+  "title": "Build and test cpp (iteration 1)",
+  "labels": [
+    "cpp",
+    "iteration-1",
+    "quality-gate"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1GWK2315VX32D1Q9A9SJDA/input.json",
+    "outputJsonPath": "tasks/01KM1GWK2315VX32D1Q9A9SJDA/result.json"
+  },
+  "inputs": {
+    "iteration": 1,
+    "language": "cpp"
+  }
+}

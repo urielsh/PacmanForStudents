@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM3AWPK8JK8HNN42QT3DD676",
+  "taskId": "write-tradeoffs",
+  "invocationKey": "packman-website:S000003:write-tradeoffs",
+  "stepId": "S000003",
+  "kind": "agent",
+  "title": "Architect: Write tradeoff analysis docs",
+  "labels": [
+    "architect",
+    "phase1"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM3AWPK8JK8HNN42QT3DD676/input.json",
+    "outputJsonPath": "tasks/01KM3AWPK8JK8HNN42QT3DD676/result.json"
+  },
+  "inputs": {
+    "projectRoot": "/home/urisha/Desktop/workspace/Packman",
+    "websiteRoot": "/home/urisha/Desktop/workspace/Packman/website"
+  }
+}

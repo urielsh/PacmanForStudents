@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1DMGG5CYC1NA8KWWFJBHRE",
+  "taskId": "write-lang-readme",
+  "invocationKey": "packman-multi-lang-edu:S000037:write-lang-readme",
+  "status": "ok",
+  "result": {
+    "file": "typescript/README.md",
+    "status": "success"
+  },
+  "startedAt": "2026-03-18T21:31:32.977Z",
+  "finishedAt": "2026-03-18T21:31:32.977Z",
+  "value": {
+    "file": "typescript/README.md",
+    "status": "success"
+  }
+}

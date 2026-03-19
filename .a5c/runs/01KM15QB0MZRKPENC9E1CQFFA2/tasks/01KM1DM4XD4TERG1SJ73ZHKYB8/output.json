@@ -1,0 +1,1 @@
+{"overallScore": 96, "scores": {"buildTests": 100, "annotations": 95, "behaviorMatch": 96, "separationOfConcerns": 100, "namingConventions": 98}, "recommendations": ["Consider adding C++ cross-references to annotations for completeness"], "criticalIssues": []}

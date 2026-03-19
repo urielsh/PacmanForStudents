@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM3C29JRRVR13QC67GQPMKVQ",
+  "taskId": "backend-copy-games",
+  "invocationKey": "packman-website:S000008:backend-copy-games",
+  "stepId": "S000008",
+  "kind": "agent",
+  "title": "Backend: Copy JS/TS game files to frontend",
+  "labels": [
+    "backend",
+    "phase2",
+    "wave1"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM3C29JRRVR13QC67GQPMKVQ/input.json",
+    "outputJsonPath": "tasks/01KM3C29JRRVR13QC67GQPMKVQ/result.json"
+  },
+  "inputs": {
+    "projectRoot": "/home/urisha/Desktop/workspace/Packman",
+    "websiteRoot": "/home/urisha/Desktop/workspace/Packman/website"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1EBTT3DY7SZ7NDW96HG5S1",
+  "taskId": "build-lang-infra",
+  "invocationKey": "packman-multi-lang-edu:S000042:build-lang-infra",
+  "status": "ok",
+  "result": {
+    "build": "success",
+    "files_created": [
+      "cpp/CMakeLists.txt",
+      "cpp/run.sh",
+      "cpp/.clang-tidy",
+      "cpp/tests/test_maze.cpp",
+      "cpp/tests/test_pacman.cpp",
+      "cpp/tests/test_ghost.cpp",
+      "cpp/tests/test_game_logic.cpp"
+    ],
+    "testsFailed": 0,
+    "testsPassed": 26
+  },
+  "startedAt": "2026-03-18T21:45:59.119Z",
+  "finishedAt": "2026-03-18T21:45:59.119Z",
+  "value": {
+    "build": "success",
+    "files_created": [
+      "cpp/CMakeLists.txt",
+      "cpp/run.sh",
+      "cpp/.clang-tidy",
+      "cpp/tests/test_maze.cpp",
+      "cpp/tests/test_pacman.cpp",
+      "cpp/tests/test_ghost.cpp",
+      "cpp/tests/test_game_logic.cpp"
+    ],
+    "testsFailed": 0,
+    "testsPassed": 26
+  }
+}

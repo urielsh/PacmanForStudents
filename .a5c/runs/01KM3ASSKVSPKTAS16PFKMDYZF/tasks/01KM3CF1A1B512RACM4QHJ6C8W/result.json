@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM3CF1A1B512RACM4QHJ6C8W",
+  "taskId": "backend-cpp-wasm",
+  "invocationKey": "packman-website:S000011:backend-cpp-wasm",
+  "status": "ok",
+  "result": {
+    "buildAttempted": false,
+    "filesCreated": [
+      "website/backend/wasm/cpp/CMakeLists.emscripten.txt",
+      "website/backend/wasm/cpp/shell.html",
+      "website/backend/scripts/build-cpp-wasm.sh"
+    ],
+    "filesModified": [
+      "cpp/main.cpp"
+    ],
+    "success": true,
+    "summary": "Ported C++/SDL2 Pacman for Emscripten WASM. Modified cpp/main.cpp with #ifdef __EMSCRIPTEN__ guard: EmscriptenLoopContext struct, static emscripten_frame_callback() for poll+update+render, emscripten_set_main_loop() call. Desktop loop preserved in #else. Created CMakeLists.emscripten.txt with -s USE_SDL=2 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1. Created shell.html with dark Pacman theme, loading spinner, progress bar. Created build-cpp-wasm.sh script. Build not attempted (emcc not verified available)."
+  },
+  "startedAt": "2026-03-19T15:57:53.045Z",
+  "finishedAt": "2026-03-19T15:57:53.045Z",
+  "value": {
+    "buildAttempted": false,
+    "filesCreated": [
+      "website/backend/wasm/cpp/CMakeLists.emscripten.txt",
+      "website/backend/wasm/cpp/shell.html",
+      "website/backend/scripts/build-cpp-wasm.sh"
+    ],
+    "filesModified": [
+      "cpp/main.cpp"
+    ],
+    "success": true,
+    "summary": "Ported C++/SDL2 Pacman for Emscripten WASM. Modified cpp/main.cpp with #ifdef __EMSCRIPTEN__ guard: EmscriptenLoopContext struct, static emscripten_frame_callback() for poll+update+render, emscripten_set_main_loop() call. Desktop loop preserved in #else. Created CMakeLists.emscripten.txt with -s USE_SDL=2 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1. Created shell.html with dark Pacman theme, loading spinner, progress bar. Created build-cpp-wasm.sh script. Build not attempted (emcc not verified available)."
+  }
+}

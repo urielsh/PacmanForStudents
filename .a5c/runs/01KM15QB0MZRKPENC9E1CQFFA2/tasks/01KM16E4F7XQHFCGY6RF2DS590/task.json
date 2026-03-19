@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM16E4F7XQHFCGY6RF2DS590",
+  "taskId": "add-java-annotations",
+  "invocationKey": "packman-multi-lang-edu:S000003:add-java-annotations",
+  "stepId": "S000003",
+  "kind": "agent",
+  "title": "Add educational annotations to Java source files",
+  "labels": [
+    "annotations",
+    "frontend",
+    "phase-1"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM16E4F7XQHFCGY6RF2DS590/input.json",
+    "outputJsonPath": "tasks/01KM16E4F7XQHFCGY6RF2DS590/result.json"
+  },
+  "inputs": {
+    "description": "Add 6 educational annotation blocks per Java source file covering: Game Loop Timing, Rendering/Drawing, Input Handling, Object Movement, Collision Detection, Ghost AI."
+  }
+}

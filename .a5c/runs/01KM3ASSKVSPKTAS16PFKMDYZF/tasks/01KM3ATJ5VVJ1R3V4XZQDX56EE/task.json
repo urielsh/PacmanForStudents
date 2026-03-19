@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM3ATJ5VVJ1R3V4XZQDX56EE",
+  "taskId": "scaffold-dirs",
+  "invocationKey": "packman-website:S000001:scaffold-dirs",
+  "stepId": "S000001",
+  "kind": "agent",
+  "title": "Create website directory structure",
+  "labels": [
+    "phase1",
+    "scaffold"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM3ATJ5VVJ1R3V4XZQDX56EE/input.json",
+    "outputJsonPath": "tasks/01KM3ATJ5VVJ1R3V4XZQDX56EE/result.json"
+  },
+  "inputs": {
+    "projectRoot": "/home/urisha/Desktop/workspace/Packman",
+    "websiteRoot": "/home/urisha/Desktop/workspace/Packman/website"
+  }
+}

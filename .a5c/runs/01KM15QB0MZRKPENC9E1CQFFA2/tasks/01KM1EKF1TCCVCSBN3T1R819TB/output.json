@@ -1,0 +1,1 @@
+{"testFiles": ["cpp/tests/test_maze.cpp","cpp/tests/test_pacman.cpp","cpp/tests/test_ghost.cpp","cpp/tests/test_game_logic.cpp"], "testsPassed": 26, "testsFailed": 0, "errors": [], "note": "Tests were already created and verified during infrastructure step"}

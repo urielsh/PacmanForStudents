@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM3CF1A1B512RACM4QHJ6C8W",
+  "taskId": "backend-cpp-wasm",
+  "invocationKey": "packman-website:S000011:backend-cpp-wasm",
+  "stepId": "S000011",
+  "kind": "agent",
+  "title": "Backend: C++ Emscripten WASM port",
+  "labels": [
+    "backend",
+    "phase2",
+    "wave2"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM3CF1A1B512RACM4QHJ6C8W/input.json",
+    "outputJsonPath": "tasks/01KM3CF1A1B512RACM4QHJ6C8W/result.json"
+  },
+  "inputs": {
+    "projectRoot": "/home/urisha/Desktop/workspace/Packman",
+    "websiteRoot": "/home/urisha/Desktop/workspace/Packman/website"
+  }
+}

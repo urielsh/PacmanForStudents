@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM3CF19QCGGY7F0RBD0HRYCD",
+  "taskId": "frontend-pages",
+  "invocationKey": "packman-website:S000010:frontend-pages",
+  "status": "ok",
+  "result": {
+    "filesCreated": [
+      "src/content/config.ts",
+      "src/content/comparisons/game-loop.md",
+      "src/content/comparisons/rendering.md",
+      "src/content/comparisons/input-handling.md",
+      "src/content/comparisons/collision-detection.md",
+      "src/content/comparisons/ghost-ai.md",
+      "src/content/comparisons/state-management.md",
+      "src/content/languages/java.md",
+      "src/content/languages/python.md",
+      "src/content/languages/javascript.md",
+      "src/content/languages/typescript.md",
+      "src/content/languages/cpp.md",
+      "src/components/Hero.astro",
+      "src/components/LanguageCard.astro",
+      "src/components/GameEmbed.tsx",
+      "src/pages/index.astro",
+      "src/pages/play.astro",
+      "src/pages/languages/index.astro",
+      "src/pages/languages/[lang].astro",
+      "src/pages/compare/index.astro",
+      "src/pages/compare/[slug].astro"
+    ],
+    "success": true,
+    "summary": "Created 21 files. Content collections with Zod schemas for comparisons (6 docs) and languages (5 docs). Hero.astro with animated yellow circle and ghost trail. LanguageCard.astro with color accent props. GameEmbed.tsx React island with 5 language tabs (JS/TS enabled, others Coming Soon), iframe embed, focus management, restart button. Updated index.astro with Hero+LanguageCard. Created play.astro, languages/[lang].astro, languages/index.astro, compare/index.astro hub, compare/[slug].astro with prev/next nav. Build verified: 15 pages built in 1.27s, astro check 0 errors."
+  },
+  "startedAt": "2026-03-19T15:57:51.707Z",
+  "finishedAt": "2026-03-19T15:57:51.707Z",
+  "value": {
+    "filesCreated": [
+      "src/content/config.ts",
+      "src/content/comparisons/game-loop.md",
+      "src/content/comparisons/rendering.md",
+      "src/content/comparisons/input-handling.md",
+      "src/content/comparisons/collision-detection.md",
+      "src/content/comparisons/ghost-ai.md",
+      "src/content/comparisons/state-management.md",
+      "src/content/languages/java.md",
+      "src/content/languages/python.md",
+      "src/content/languages/javascript.md",
+      "src/content/languages/typescript.md",
+      "src/content/languages/cpp.md",
+      "src/components/Hero.astro",
+      "src/components/LanguageCard.astro",
+      "src/components/GameEmbed.tsx",
+      "src/pages/index.astro",
+      "src/pages/play.astro",
+      "src/pages/languages/index.astro",
+      "src/pages/languages/[lang].astro",
+      "src/pages/compare/index.astro",
+      "src/pages/compare/[slug].astro"
+    ],
+    "success": true,
+    "summary": "Created 21 files. Content collections with Zod schemas for comparisons (6 docs) and languages (5 docs). Hero.astro with animated yellow circle and ghost trail. LanguageCard.astro with color accent props. GameEmbed.tsx React island with 5 language tabs (JS/TS enabled, others Coming Soon), iframe embed, focus management, restart button. Updated index.astro with Hero+LanguageCard. Created play.astro, languages/[lang].astro, languages/index.astro, compare/index.astro hub, compare/[slug].astro with prev/next nav. Build verified: 15 pages built in 1.27s, astro check 0 errors."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-19T15:19:42.960Z",
+  "data": {
+    "effectId": "01KM3AWPKDZ1KY9YBFJPWM9K65",
+    "invocationKey": "packman-website:S000004:write-contracts",
+    "invocationHash": "78e73e427e3d4abb4af6d898c20af408aae321f9964e771128f1f3d16f988b12",
+    "stepId": "S000004",
+    "taskId": "write-contracts",
+    "kind": "agent",
+    "label": "phase1",
+    "taskDefRef": "tasks/01KM3AWPKDZ1KY9YBFJPWM9K65/task.json",
+    "labels": [
+      "phase1",
+      "architect"
+    ]
+  },
+  "checksum": "5adc810e0fc2d40a155e2264e7504a41678617f75b1d05c7ebb16f365564547c"
+}

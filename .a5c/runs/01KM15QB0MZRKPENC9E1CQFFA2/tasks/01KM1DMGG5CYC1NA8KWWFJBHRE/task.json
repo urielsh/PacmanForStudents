@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1DMGG5CYC1NA8KWWFJBHRE",
+  "taskId": "write-lang-readme",
+  "invocationKey": "packman-multi-lang-edu:S000037:write-lang-readme",
+  "stepId": "S000037",
+  "kind": "agent",
+  "title": "Write typescript README",
+  "labels": [
+    "readme",
+    "typescript"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1DMGG5CYC1NA8KWWFJBHRE/input.json",
+    "outputJsonPath": "tasks/01KM1DMGG5CYC1NA8KWWFJBHRE/result.json"
+  },
+  "inputs": {
+    "exercises": [
+      "Add generic type for grid positions",
+      "Implement discriminated union for game states",
+      "Add strict null checks"
+    ],
+    "highlights": [
+      "Static type system on top of JS",
+      "Interfaces for game entities",
+      "Enums for directions/ghost names",
+      "Compile-time error catching"
+    ],
+    "language": "typescript"
+  }
+}

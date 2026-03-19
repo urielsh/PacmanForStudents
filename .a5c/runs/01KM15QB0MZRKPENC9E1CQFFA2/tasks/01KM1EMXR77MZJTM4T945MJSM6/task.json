@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1EMXR77MZJTM4T945MJSM6",
+  "taskId": "quality-scorer",
+  "invocationKey": "packman-multi-lang-edu:S000045:quality-scorer",
+  "stepId": "S000045",
+  "kind": "agent",
+  "title": "Quality score: Phase 5: cpp (iteration 1)",
+  "labels": [
+    "cpp",
+    "iteration-1",
+    "quality-scoring"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1EMXR77MZJTM4T945MJSM6/input.json",
+    "outputJsonPath": "tasks/01KM1EMXR77MZJTM4T945MJSM6/result.json"
+  },
+  "inputs": {
+    "buildResult": {
+      "buildSuccess": true,
+      "errors": [],
+      "testsFailed": 0,
+      "testsPassed": 26
+    },
+    "checks": [
+      "build",
+      "tests",
+      "annotations",
+      "behavior-match"
+    ],
+    "iteration": 1,
+    "language": "cpp",
+    "phase": "Phase 5: cpp",
+    "targetQuality": 85
+  }
+}

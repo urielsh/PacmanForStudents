@@ -1,0 +1,89 @@
+name: Build WASM Artifacts
+
+on:
+  workflow_call:
+
+jobs:
+  build-cpp-wasm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Emscripten
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: 3.1.51
+
+      - name: Verify Emscripten
+        run: emcc --version
+
+      - name: Build C++ WASM
+        run: |
+          chmod +x website/infrastructure/ci/build-cpp-wasm.sh
+          ./website/infrastructure/ci/build-cpp-wasm.sh
+
+      - name: Upload C++ WASM artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cpp-wasm
+          path: |
+            website/frontend/public/game/cpp/*.wasm
+            website/frontend/public/game/cpp/*.js
+          retention-days: 7
+
+  build-python-wasm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pygbag
+        run: pip install pygbag
+
+      - name: Build Python WASM
+        run: |
+          chmod +x website/infrastructure/ci/build-python-wasm.sh
+          ./website/infrastructure/ci/build-python-wasm.sh
+
+      - name: Upload Python WASM artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-wasm
+          path: website/frontend/public/game/python/
+          retention-days: 7
+
+  build-java-jar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: maven
+
+      - name: Setup Maven
+        uses: stCarolas/setup-maven@v5
+        with:
+          maven-version: 3.9.6
+
+      - name: Build Java JAR
+        run: |
+          chmod +x website/infrastructure/ci/build-java-jar.sh
+          ./website/infrastructure/ci/build-java-jar.sh
+
+      - name: Upload Java JAR artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: java-jar
+          path: website/frontend/public/game/java/
+          retention-days: 7

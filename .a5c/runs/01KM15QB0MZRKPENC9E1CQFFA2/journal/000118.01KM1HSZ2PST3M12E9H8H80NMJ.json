@@ -1,0 +1,19 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T22:42:04.502Z",
+  "data": {
+    "effectId": "01KM1HSZ2FPTR6JCK6NNZEJBNN",
+    "invocationKey": "packman-multi-lang-edu:S000059:final-arch-review",
+    "invocationHash": "30b8e4e1ff04452f725dfaf3b26c3787ef058f515924ceae05cfb9f18262e0f8",
+    "stepId": "S000059",
+    "taskId": "final-arch-review",
+    "kind": "agent",
+    "label": "phase-7",
+    "taskDefRef": "tasks/01KM1HSZ2FPTR6JCK6NNZEJBNN/task.json",
+    "labels": [
+      "phase-7",
+      "final-review"
+    ]
+  },
+  "checksum": "21bbb73f3ed75d2e05ed389d8b75cabb6b024755f97c8f7b8fa0523d0e957362"
+}

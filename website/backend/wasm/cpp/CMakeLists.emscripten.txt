@@ -1,0 +1,63 @@
+# ============================================================================
+# CMake build file for Pacman C++/SDL2 → WebAssembly (Emscripten)
+# ============================================================================
+# Usage:
+#   mkdir -p build && cd build
+#   emcmake cmake -DCMAKE_TOOLCHAIN_FILE=$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake \
+#                 -f ../CMakeLists.emscripten.txt ..
+#   emmake make
+#
+# Output: pacman_wasm.html, pacman_wasm.js, pacman_wasm.wasm
+# ============================================================================
+
+cmake_minimum_required(VERSION 3.14)
+project(PacmanWasm VERSION 1.0 LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# ---------------------------------------------------------------------------
+# Source files — relative to the C++ source directory
+# ---------------------------------------------------------------------------
+set(CPP_SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../../../cpp")
+
+set(GAME_SOURCES
+    ${CPP_SRC_DIR}/main.cpp
+    ${CPP_SRC_DIR}/game_panel.cpp
+    ${CPP_SRC_DIR}/game_logic.cpp
+    ${CPP_SRC_DIR}/maze.cpp
+    ${CPP_SRC_DIR}/pacman.cpp
+    ${CPP_SRC_DIR}/ghost.cpp
+)
+
+add_executable(pacman_wasm ${GAME_SOURCES})
+
+# Include the cpp directory so headers are found
+target_include_directories(pacman_wasm PRIVATE ${CPP_SRC_DIR})
+
+# ---------------------------------------------------------------------------
+# Emscripten compile & link flags
+# ---------------------------------------------------------------------------
+# -s USE_SDL=2          — Use Emscripten's built-in SDL2 port (no system SDL needed)
+# -s WASM=1             — Emit WebAssembly (not asm.js)
+# -s ALLOW_MEMORY_GROWTH=1 — Let the WASM heap grow dynamically
+# -s EXPORTED_RUNTIME_METHODS — Expose ccall/cwrap for JS interop
+# --shell-file          — Custom HTML template with loading indicator & styling
+
+set(EMSCRIPTEN_LINK_FLAGS
+    "-s USE_SDL=2"
+    "-s WASM=1"
+    "-s ALLOW_MEMORY_GROWTH=1"
+    "-s EXPORTED_RUNTIME_METHODS=['ccall','cwrap']"
+    "--shell-file ${CMAKE_CURRENT_SOURCE_DIR}/shell.html"
+)
+
+# Apply USE_SDL=2 at compile time as well (required for Emscripten SDL2 headers)
+target_compile_options(pacman_wasm PRIVATE -s USE_SDL=2)
+
+# Join link flags into a single string for CMAKE_EXE_LINKER_FLAGS style usage
+string(JOIN " " EMSCRIPTEN_LINK_FLAGS_STR ${EMSCRIPTEN_LINK_FLAGS})
+set_target_properties(pacman_wasm PROPERTIES
+    LINK_FLAGS "${EMSCRIPTEN_LINK_FLAGS_STR}"
+    SUFFIX ".html"
+)

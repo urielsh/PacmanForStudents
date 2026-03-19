@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM19KTK5DZBM1J8CMN6TQRD6",
+  "taskId": "build-lang-infra",
+  "invocationKey": "packman-multi-lang-edu:S000015:build-lang-infra",
+  "stepId": "S000015",
+  "kind": "agent",
+  "title": "Build python infrastructure",
+  "labels": [
+    "devops",
+    "phase-2",
+    "python"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM19KTK5DZBM1J8CMN6TQRD6/input.json",
+    "outputJsonPath": "tasks/01KM19KTK5DZBM1J8CMN6TQRD6/result.json"
+  },
+  "inputs": {
+    "framework": "Pygame",
+    "language": "python",
+    "phase": 2
+  }
+}

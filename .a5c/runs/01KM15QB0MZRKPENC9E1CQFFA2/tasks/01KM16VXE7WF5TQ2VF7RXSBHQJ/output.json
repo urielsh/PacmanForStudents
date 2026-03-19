@@ -1,0 +1,1 @@
+{"summary": "Created 4 test files with 18 tests total. All 18 pass. MazeTest(7), PacmanTest(4), GhostTest(3), GameLogicTest(4). Wall collision enforcement verified.", "testFiles": ["MazeTest.java", "PacmanTest.java", "GhostTest.java", "GameLogicTest.java"], "testsPassed": 18, "testsFailed": 0, "buildSuccess": true}

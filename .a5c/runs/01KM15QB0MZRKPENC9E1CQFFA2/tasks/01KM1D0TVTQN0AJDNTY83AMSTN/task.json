@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1D0TVTQN0AJDNTY83AMSTN",
+  "taskId": "add-lang-annotations",
+  "invocationKey": "packman-multi-lang-edu:S000032:add-lang-annotations",
+  "stepId": "S000032",
+  "kind": "agent",
+  "title": "Add educational annotations to typescript",
+  "labels": [
+    "annotations",
+    "phase-4",
+    "typescript"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1D0TVTQN0AJDNTY83AMSTN/input.json",
+    "outputJsonPath": "tasks/01KM1D0TVTQN0AJDNTY83AMSTN/result.json"
+  },
+  "inputs": {
+    "language": "typescript",
+    "phase": 4,
+    "priorLanguages": [
+      "python",
+      "javascript",
+      "java"
+    ]
+  }
+}

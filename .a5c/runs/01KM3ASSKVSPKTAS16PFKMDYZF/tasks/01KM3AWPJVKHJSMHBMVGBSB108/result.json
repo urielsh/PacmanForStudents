@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM3AWPJVKHJSMHBMVGBSB108",
+  "taskId": "write-adrs",
+  "invocationKey": "packman-website:S000002:write-adrs",
+  "status": "ok",
+  "result": {
+    "filesCreated": [
+      "website/docs/decisions/ADR-001-astro-framework.md",
+      "website/docs/decisions/ADR-002-wasm-strategy.md",
+      "website/docs/decisions/ADR-003-iframe-isolation.md",
+      "website/docs/decisions/ADR-004-static-hosting.md"
+    ],
+    "success": true,
+    "summary": "4 ADRs created covering Astro framework, WASM strategy, iframe isolation, and static hosting decisions."
+  },
+  "startedAt": "2026-03-19T15:29:53.171Z",
+  "finishedAt": "2026-03-19T15:29:53.171Z",
+  "value": {
+    "filesCreated": [
+      "website/docs/decisions/ADR-001-astro-framework.md",
+      "website/docs/decisions/ADR-002-wasm-strategy.md",
+      "website/docs/decisions/ADR-003-iframe-isolation.md",
+      "website/docs/decisions/ADR-004-static-hosting.md"
+    ],
+    "success": true,
+    "summary": "4 ADRs created covering Astro framework, WASM strategy, iframe isolation, and static hosting decisions."
+  }
+}

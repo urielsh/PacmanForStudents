@@ -1,0 +1,1 @@
+{"summary": "Fixed 4 bugs: (1) Pacman.isValidMove now calls maze.isWall, (2) Ghost movement uses maze.isWall, (3) GamePanel.update checks isGameOver, (4) Pinky color is new Color(0xFF,0xB8,0xFF). Call site updated. BUILD SUCCESS with 0 errors.", "bugsFixed": 4, "compilationSuccess": true}

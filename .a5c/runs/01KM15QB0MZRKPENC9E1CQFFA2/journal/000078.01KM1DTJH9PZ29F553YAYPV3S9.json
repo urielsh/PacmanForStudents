@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T21:32:30.121Z",
+  "data": {
+    "effectId": "01KM1DTJH2VVGEQTG3YBAW3QVE",
+    "invocationKey": "packman-multi-lang-edu:S000039:implement-game-logic",
+    "invocationHash": "8d24d709a84bd751d5fc71ac75fa8f4a8e8e70dde3d35864f1e4a84a97e65a4f",
+    "stepId": "S000039",
+    "taskId": "implement-game-logic",
+    "kind": "agent",
+    "label": "phase-5",
+    "taskDefRef": "tasks/01KM1DTJH2VVGEQTG3YBAW3QVE/task.json",
+    "labels": [
+      "phase-5",
+      "backend",
+      "cpp"
+    ]
+  },
+  "checksum": "8980252ef72e0d3041518aa8397eee144de4ff4faf867177ab7b19678e83e15e"
+}

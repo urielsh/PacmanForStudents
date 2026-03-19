@@ -1,0 +1,1 @@
+{"success": true, "filesCreated": ["website/docs/api/snippet-schema.md", "website/docs/api/postmessage-protocol.md"], "summary": "2 API contract docs created: CodeSnippet interface schema and PostMessage protocol specification with TypeScript types and example payloads."}

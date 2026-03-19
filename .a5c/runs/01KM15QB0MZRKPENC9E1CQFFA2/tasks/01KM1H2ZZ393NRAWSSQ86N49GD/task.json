@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1H2ZZ393NRAWSSQ86N49GD",
+  "taskId": "cross-lang-verify",
+  "invocationKey": "packman-multi-lang-edu:S000058:cross-lang-verify",
+  "stepId": "S000058",
+  "kind": "agent",
+  "title": "Cross-language behavior verification",
+  "labels": [
+    "phase-7",
+    "verification"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1H2ZZ393NRAWSSQ86N49GD/input.json",
+    "outputJsonPath": "tasks/01KM1H2ZZ393NRAWSSQ86N49GD/result.json"
+  },
+  "inputs": {
+    "verificationResults": {
+      "cpp": {
+        "buildSuccess": true,
+        "errors": [],
+        "testsFailed": 0,
+        "testsPassed": 26
+      },
+      "java": {
+        "buildSuccess": true,
+        "errors": [],
+        "testsFailed": 0,
+        "testsPassed": 18
+      },
+      "javascript": {
+        "buildSuccess": true,
+        "errors": [],
+        "testsFailed": 0,
+        "testsPassed": 38
+      },
+      "python": {
+        "buildSuccess": true,
+        "errors": [],
+        "testsFailed": 0,
+        "testsPassed": 18
+      },
+      "typescript": {
+        "buildSuccess": true,
+        "errors": [],
+        "testsFailed": 0,
+        "testsPassed": 57
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"files_created": ["javascript/maze.js","javascript/pacman.js","javascript/ghost.js","javascript/game_logic.js"], "conventions": "ZERO rendering imports, wall checking on all movement, camelCase/PascalCase/UPPER_SNAKE"}

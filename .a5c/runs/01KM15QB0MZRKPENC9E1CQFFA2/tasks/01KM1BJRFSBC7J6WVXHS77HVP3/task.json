@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1BJRFSBC7J6WVXHS77HVP3",
+  "taskId": "write-lang-readme",
+  "invocationKey": "packman-multi-lang-edu:S000019:write-lang-readme",
+  "stepId": "S000019",
+  "kind": "agent",
+  "title": "Write python README",
+  "labels": [
+    "python",
+    "readme"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1BJRFSBC7J6WVXHS77HVP3/input.json",
+    "outputJsonPath": "tasks/01KM1BJRFSBC7J6WVXHS77HVP3/result.json"
+  },
+  "inputs": {
+    "exercises": [
+      "Add ghost chase AI using Manhattan distance",
+      "Implement level progression",
+      "Add sound effects with pygame.mixer"
+    ],
+    "highlights": [
+      "Dynamic typing",
+      "Simple game loop",
+      "List comprehensions for maze",
+      "No compilation step"
+    ],
+    "language": "python"
+  }
+}

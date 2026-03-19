@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T22:26:01.916Z",
+  "data": {
+    "effectId": "01KM1GWK1SXG8N29VMKSG417PD",
+    "invocationKey": "packman-multi-lang-edu:S000055:build-test-lang",
+    "invocationHash": "ca0741aef574b2476fe42e21221267becdc56fb5b9426b5297d11f92bde7b8b4",
+    "stepId": "S000055",
+    "taskId": "build-test-lang",
+    "kind": "agent",
+    "label": "quality-gate",
+    "taskDefRef": "tasks/01KM1GWK1SXG8N29VMKSG417PD/task.json",
+    "labels": [
+      "quality-gate",
+      "javascript",
+      "iteration-1"
+    ]
+  },
+  "checksum": "7807ab8038f881cbc756a8455f0b1f780ce7d3485cd1e8d2db41cf2ae1304f83"
+}

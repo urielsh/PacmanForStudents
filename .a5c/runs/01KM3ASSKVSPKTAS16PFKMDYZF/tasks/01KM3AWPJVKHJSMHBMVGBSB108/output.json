@@ -1,0 +1,1 @@
+{"success": true, "filesCreated": ["website/docs/decisions/ADR-001-astro-framework.md", "website/docs/decisions/ADR-002-wasm-strategy.md", "website/docs/decisions/ADR-003-iframe-isolation.md", "website/docs/decisions/ADR-004-static-hosting.md"], "summary": "4 ADRs created covering Astro framework, WASM strategy, iframe isolation, and static hosting decisions."}

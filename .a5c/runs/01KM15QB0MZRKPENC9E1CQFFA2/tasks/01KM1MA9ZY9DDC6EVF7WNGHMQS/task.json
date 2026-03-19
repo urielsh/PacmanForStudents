@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1MA9ZY9DDC6EVF7WNGHMQS",
+  "taskId": "__sdk.breakpoint",
+  "invocationKey": "packman-multi-lang-edu:S000060:__sdk.breakpoint",
+  "stepId": "S000060",
+  "kind": "breakpoint",
+  "title": "breakpoint",
+  "metadata": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": []
+      },
+      "question": "All phases complete. Final quality assessment: APPROVED -- All PRD Section 11 acceptance criteria are met.. Approve for final sign-off?",
+      "title": "Final Sign-Off: Packman Multi-Language Educational Game"
+    },
+    "requestedAt": "2026-03-18T23:25:57.117Z"
+  },
+  "inputs": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": []
+      },
+      "question": "All phases complete. Final quality assessment: APPROVED -- All PRD Section 11 acceptance criteria are met.. Approve for final sign-off?",
+      "title": "Final Sign-Off: Packman Multi-Language Educational Game"
+    },
+    "requestedAt": "2026-03-18T23:25:57.117Z"
+  }
+}

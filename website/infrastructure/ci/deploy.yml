@@ -1,0 +1,53 @@
+name: Deploy Packman Website
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "website/**"
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: website/frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        run: cd website/frontend && npm ci
+
+      - name: Build Astro site
+        run: cd website/frontend && npm run build
+
+      - name: Deploy via rsync to OCI VM
+        env:
+          OCI_HOST: ${{ secrets.OCI_HOST }}
+          OCI_USER: ${{ secrets.OCI_USER }}
+          OCI_SSH_KEY: ${{ secrets.OCI_SSH_KEY }}
+        run: |
+          # Install rsync
+          sudo apt-get update -qq && sudo apt-get install -y -qq rsync
+
+          # Write SSH key to temp file
+          SSH_KEY_FILE=$(mktemp)
+          echo "$OCI_SSH_KEY" > "$SSH_KEY_FILE"
+          chmod 600 "$SSH_KEY_FILE"
+
+          # Deploy with rsync
+          rsync -avz --delete \
+            -e "ssh -i $SSH_KEY_FILE -o StrictHostKeyChecking=no" \
+            website/frontend/dist/ \
+            "${OCI_USER}@${OCI_HOST}:/var/www/packman/"
+
+          # Clean up SSH key
+          rm -f "$SSH_KEY_FILE"

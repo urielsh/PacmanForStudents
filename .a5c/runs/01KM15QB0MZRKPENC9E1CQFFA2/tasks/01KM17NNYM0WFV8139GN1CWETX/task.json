@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM17NNYM0WFV8139GN1CWETX",
+  "taskId": "write-lang-readme",
+  "invocationKey": "packman-multi-lang-edu:S000010:write-lang-readme",
+  "stepId": "S000010",
+  "kind": "agent",
+  "title": "Write java README",
+  "labels": [
+    "java",
+    "readme"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM17NNYM0WFV8139GN1CWETX/input.json",
+    "outputJsonPath": "tasks/01KM17NNYM0WFV8139GN1CWETX/result.json"
+  },
+  "inputs": {
+    "exercises": [
+      "Modify ghost AI to chase Pacman",
+      "Add power pellets with timer",
+      "Implement multiple lives"
+    ],
+    "highlights": [
+      "OOP class hierarchy",
+      "Swing event dispatch thread",
+      "AWT/Swing rendering pipeline",
+      "Timer-based game loop"
+    ],
+    "language": "java"
+  }
+}

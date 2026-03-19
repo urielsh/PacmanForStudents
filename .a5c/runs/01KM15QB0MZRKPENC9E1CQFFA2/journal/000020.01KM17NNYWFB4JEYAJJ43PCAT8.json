@@ -1,0 +1,19 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T19:44:58.332Z",
+  "data": {
+    "effectId": "01KM17NNYM0WFV8139GN1CWETX",
+    "invocationKey": "packman-multi-lang-edu:S000010:write-lang-readme",
+    "invocationHash": "a2d7efc6be266f413007b403c7ba612960a2f78e42a1f10fd2f7bf39d795cd78",
+    "stepId": "S000010",
+    "taskId": "write-lang-readme",
+    "kind": "agent",
+    "label": "readme",
+    "taskDefRef": "tasks/01KM17NNYM0WFV8139GN1CWETX/task.json",
+    "labels": [
+      "readme",
+      "java"
+    ]
+  },
+  "checksum": "5b528a5488d1d7aaf2b594f09a6b4b118549fa025025051256afda22caf1fd5b"
+}

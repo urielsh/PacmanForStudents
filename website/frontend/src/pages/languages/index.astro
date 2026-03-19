@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LanguageCard from '../../components/LanguageCard.astro';
+import { getCollection } from 'astro:content';
+
+const languages = await getCollection('languages');
+const sorted = languages.sort((a, b) => a.data.order - b.data.order);
+
+const descriptions: Record<string, string> = {
+  python: 'Dynamic typing, Pygame, and the simplest game loop you\'ll ever see.',
+  javascript: 'Canvas 2D, requestAnimationFrame, and zero dependencies.',
+  typescript: 'Static types over Canvas -- same runtime, fewer bugs.',
+  java: 'Swing, EDT threading, and strict OOP class hierarchy.',
+  cpp: 'SDL2, manual memory, RAII, and full control over every byte.',
+};
+---
+
+<BaseLayout title="Languages - Packman">
+  <div class="py-4">
+    <!-- Page header -->
+    <div class="text-center mb-12">
+      <h1 class="font-heading text-pacman-yellow text-xl sm:text-2xl mb-4 tracking-wider">
+        FIVE LANGUAGES
+      </h1>
+      <p class="text-gray-400 text-sm max-w-lg mx-auto">
+        The same Pac-Man game implemented in five programming languages.
+        Each uses the language's natural idioms and ecosystem.
+      </p>
+    </div>
+
+    <!-- Language cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      {sorted.map((lang) => (
+        <LanguageCard
+          name={lang.data.name}
+          icon={lang.data.icon}
+          description={descriptions[lang.slug] || `Pacman in ${lang.data.name}`}
+          color={lang.data.color}
+          href={`/languages/${lang.slug}`}
+        />
+      ))}
+    </div>
+  </div>
+</BaseLayout>

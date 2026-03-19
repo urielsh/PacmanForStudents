@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1EBTT3DY7SZ7NDW96HG5S1",
+  "taskId": "build-lang-infra",
+  "invocationKey": "packman-multi-lang-edu:S000042:build-lang-infra",
+  "stepId": "S000042",
+  "kind": "agent",
+  "title": "Build cpp infrastructure",
+  "labels": [
+    "cpp",
+    "devops",
+    "phase-5"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1EBTT3DY7SZ7NDW96HG5S1/input.json",
+    "outputJsonPath": "tasks/01KM1EBTT3DY7SZ7NDW96HG5S1/result.json"
+  },
+  "inputs": {
+    "framework": "SDL2",
+    "language": "cpp",
+    "phase": 5
+  }
+}

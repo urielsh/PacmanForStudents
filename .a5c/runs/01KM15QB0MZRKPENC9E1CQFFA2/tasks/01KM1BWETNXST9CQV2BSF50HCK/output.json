@@ -1,0 +1,1 @@
+{"files_created": ["javascript/index.html","javascript/game.js"], "files_modified": ["javascript/maze.js","javascript/pacman.js","javascript/ghost.js","javascript/game_logic.js"], "summary": "Canvas rendering, 60FPS game loop, arrow key input, score HUD, game over screen. Logic files updated for dual browser/Node compatibility."}

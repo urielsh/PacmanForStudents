@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import LanguageCard from '../components/LanguageCard.astro';
+---
+
+<BaseLayout title="Packman - One Game, Five Languages, Infinite Learning">
+  <!-- Hero Section -->
+  <Hero />
+
+  <!-- Language Cards Section -->
+  <section class="py-12">
+    <h2 class="font-heading text-pacman-yellow text-lg sm:text-xl text-center mb-8 tracking-wider">
+      CHOOSE YOUR LANGUAGE
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+      <LanguageCard
+        name="Python"
+        icon="&#128013;"
+        description="Dynamic typing, Pygame, and the simplest game loop you'll ever see."
+        color="#3776AB"
+        href="/languages/python"
+      />
+      <LanguageCard
+        name="JavaScript"
+        icon="&#9997;"
+        description="Canvas 2D, requestAnimationFrame, and zero dependencies."
+        color="#F7DF1E"
+        href="/languages/javascript"
+      />
+      <LanguageCard
+        name="TypeScript"
+        icon="&#128295;"
+        description="Static types over Canvas -- same runtime, fewer bugs."
+        color="#3178C6"
+        href="/languages/typescript"
+      />
+      <LanguageCard
+        name="Java"
+        icon="&#9749;"
+        description="Swing, EDT threading, and strict OOP class hierarchy."
+        color="#ED8B00"
+        href="/languages/java"
+      />
+      <LanguageCard
+        name="C++"
+        icon="&#9881;"
+        description="SDL2, manual memory, RAII, and full control over every byte."
+        color="#00599C"
+        href="/languages/cpp"
+      />
+    </div>
+  </section>
+
+  <!-- Compare Section Teaser -->
+  <section class="py-12 border-t-2 border-wall-blue">
+    <div class="text-center max-w-2xl mx-auto">
+      <h2 class="font-heading text-pacman-yellow text-lg sm:text-xl mb-4 tracking-wider">
+        COMPARE SIDE BY SIDE
+      </h2>
+      <p class="text-gray-400 text-sm mb-8">
+        Dive into detailed comparisons of game loops, rendering pipelines, input handling,
+        collision detection, ghost AI, and state management across all five languages.
+      </p>
+      <a
+        href="/compare"
+        class="font-heading text-sm border-2 border-ghost-cyan text-ghost-cyan px-8 py-3 rounded hover:bg-ghost-cyan hover:text-pacman-black transition-colors duration-200 inline-block"
+      >
+        EXPLORE COMPARISONS
+      </a>
+    </div>
+  </section>
+</BaseLayout>

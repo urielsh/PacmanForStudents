@@ -1,0 +1,19 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T22:01:52.693Z",
+  "data": {
+    "effectId": "01KM1FGBSJBQRVV58QRMN93K3F",
+    "invocationKey": "packman-multi-lang-edu:S000050:build-setup-script",
+    "invocationHash": "35d613b7b5b9ef43de7717bb7e8b5d60ce344d60c76cb7b017ee1a0e92bd0aef",
+    "stepId": "S000050",
+    "taskId": "build-setup-script",
+    "kind": "agent",
+    "label": "phase-6",
+    "taskDefRef": "tasks/01KM1FGBSJBQRVV58QRMN93K3F/task.json",
+    "labels": [
+      "phase-6",
+      "devops"
+    ]
+  },
+  "checksum": "806a74a99f6b47f853d83ac4617db00fe7ffa750a7aff6c27f32833d70dc2b0d"
+}

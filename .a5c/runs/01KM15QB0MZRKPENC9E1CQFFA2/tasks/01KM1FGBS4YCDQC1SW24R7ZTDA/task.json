@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1FGBS4YCDQC1SW24R7ZTDA",
+  "taskId": "build-launcher",
+  "invocationKey": "packman-multi-lang-edu:S000048:build-launcher",
+  "stepId": "S000048",
+  "kind": "agent",
+  "title": "Build Python curses TUI launcher",
+  "labels": [
+    "launcher",
+    "phase-6"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1FGBS4YCDQC1SW24R7ZTDA/input.json",
+    "outputJsonPath": "tasks/01KM1FGBS4YCDQC1SW24R7ZTDA/result.json"
+  },
+  "inputs": {
+    "description": "Build Python curses TUI launcher with ASCII art, arrow-key menu, prerequisite detection, language blurbs, and educational comparisons submenu."
+  }
+}

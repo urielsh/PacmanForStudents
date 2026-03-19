@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const languages = await getCollection('languages');
+  return languages.map((entry) => ({
+    params: { lang: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<BaseLayout title={`${entry.data.name} - Packman`}>
+  <div class="py-4">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <a href="/" class="text-gray-500 hover:text-pacman-yellow transition-colors">Home</a>
+      <span class="text-gray-600 mx-2">/</span>
+      <a href="/languages" class="text-gray-500 hover:text-pacman-yellow transition-colors">Languages</a>
+      <span class="text-gray-600 mx-2">/</span>
+      <span class="text-gray-300">{entry.data.name}</span>
+    </nav>
+
+    <!-- Language header -->
+    <div class="flex items-center gap-4 mb-8">
+      <span class="text-4xl" set:html={entry.data.icon} />
+      <div>
+        <h1
+          class="font-heading text-xl sm:text-2xl tracking-wider"
+          style={`color: ${entry.data.color};`}
+        >
+          {entry.data.name}
+        </h1>
+        <div
+          class="h-1 w-16 mt-2 rounded"
+          style={`background-color: ${entry.data.color};`}
+          aria-hidden="true"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Rendered markdown content -->
+    <article class="prose prose-invert prose-sm sm:prose-base max-w-none
+      prose-headings:font-heading prose-headings:text-pacman-yellow prose-headings:tracking-wide
+      prose-h1:text-xl prose-h2:text-lg prose-h3:text-base
+      prose-a:text-ghost-cyan prose-a:no-underline hover:prose-a:underline
+      prose-code:text-ghost-pink prose-code:bg-gray-900 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+      prose-pre:bg-gray-900 prose-pre:border prose-pre:border-wall-blue
+      prose-table:text-sm
+      prose-th:text-pacman-yellow prose-th:font-heading prose-th:text-xs
+      prose-td:text-gray-300
+      prose-strong:text-gray-200
+      prose-li:text-gray-300
+      prose-hr:border-wall-blue
+    ">
+      <Content />
+    </article>
+
+    <!-- Navigation footer -->
+    <div class="mt-12 pt-6 border-t border-wall-blue flex flex-col sm:flex-row justify-between gap-4">
+      <a
+        href="/languages"
+        class="font-heading text-xs text-gray-400 hover:text-pacman-yellow transition-colors"
+      >
+        &larr; ALL LANGUAGES
+      </a>
+      <a
+        href="/play"
+        class="font-heading text-xs text-pacman-yellow hover:text-yellow-400 transition-colors"
+      >
+        PLAY THIS VERSION &rarr;
+      </a>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM3AWPKDZ1KY9YBFJPWM9K65",
+  "taskId": "write-contracts",
+  "invocationKey": "packman-website:S000004:write-contracts",
+  "stepId": "S000004",
+  "kind": "agent",
+  "title": "Architect: Define API contracts",
+  "labels": [
+    "architect",
+    "phase1"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM3AWPKDZ1KY9YBFJPWM9K65/input.json",
+    "outputJsonPath": "tasks/01KM3AWPKDZ1KY9YBFJPWM9K65/result.json"
+  },
+  "inputs": {
+    "projectRoot": "/home/urisha/Desktop/workspace/Packman",
+    "websiteRoot": "/home/urisha/Desktop/workspace/Packman/website"
+  }
+}

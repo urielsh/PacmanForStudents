@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM19YERJDJZX8SM2GBABSJX9",
+  "taskId": "build-test-lang",
+  "invocationKey": "packman-multi-lang-edu:S000017:build-test-lang",
+  "stepId": "S000017",
+  "kind": "agent",
+  "title": "Build and test python (iteration 1)",
+  "labels": [
+    "iteration-1",
+    "python",
+    "quality-gate"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM19YERJDJZX8SM2GBABSJX9/input.json",
+    "outputJsonPath": "tasks/01KM19YERJDJZX8SM2GBABSJX9/result.json"
+  },
+  "inputs": {
+    "iteration": 1,
+    "language": "python"
+  }
+}

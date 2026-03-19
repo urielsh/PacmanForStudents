@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM3C29JRRVR13QC67GQPMKVQ",
+  "taskId": "backend-copy-games",
+  "invocationKey": "packman-website:S000008:backend-copy-games",
+  "status": "ok",
+  "result": {
+    "copyStatus": "success",
+    "filesCreated": [
+      "website/frontend/public/game/js/index.html",
+      "website/frontend/public/game/js/game.js",
+      "website/frontend/public/game/js/game_logic.js",
+      "website/frontend/public/game/js/maze.js",
+      "website/frontend/public/game/js/pacman.js",
+      "website/frontend/public/game/js/ghost.js",
+      "website/frontend/public/game/ts/index.html",
+      "website/frontend/public/game/ts/dist/bundle.js"
+    ],
+    "summary": "Copied JavaScript and TypeScript game files to frontend/public/game/. JS: 6 files (index.html, game.js, game_logic.js, maze.js, pacman.js, ghost.js). TS: 2 files (index.html, dist/bundle.js from existing TypeScript build). All files verified present and non-empty."
+  },
+  "startedAt": "2026-03-19T15:47:01.620Z",
+  "finishedAt": "2026-03-19T15:47:01.620Z",
+  "value": {
+    "copyStatus": "success",
+    "filesCreated": [
+      "website/frontend/public/game/js/index.html",
+      "website/frontend/public/game/js/game.js",
+      "website/frontend/public/game/js/game_logic.js",
+      "website/frontend/public/game/js/maze.js",
+      "website/frontend/public/game/js/pacman.js",
+      "website/frontend/public/game/js/ghost.js",
+      "website/frontend/public/game/ts/index.html",
+      "website/frontend/public/game/ts/dist/bundle.js"
+    ],
+    "summary": "Copied JavaScript and TypeScript game files to frontend/public/game/. JS: 6 files (index.html, game.js, game_logic.js, maze.js, pacman.js, ghost.js). TS: 2 files (index.html, dist/bundle.js from existing TypeScript build). All files verified present and non-empty."
+  }
+}

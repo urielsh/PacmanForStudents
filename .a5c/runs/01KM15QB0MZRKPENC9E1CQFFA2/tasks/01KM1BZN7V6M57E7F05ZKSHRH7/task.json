@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1BZN7V6M57E7F05ZKSHRH7",
+  "taskId": "add-lang-annotations",
+  "invocationKey": "packman-multi-lang-edu:S000023:add-lang-annotations",
+  "stepId": "S000023",
+  "kind": "agent",
+  "title": "Add educational annotations to javascript",
+  "labels": [
+    "annotations",
+    "javascript",
+    "phase-3"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1BZN7V6M57E7F05ZKSHRH7/input.json",
+    "outputJsonPath": "tasks/01KM1BZN7V6M57E7F05ZKSHRH7/result.json"
+  },
+  "inputs": {
+    "language": "javascript",
+    "phase": 3,
+    "priorLanguages": [
+      "python",
+      "java"
+    ]
+  }
+}

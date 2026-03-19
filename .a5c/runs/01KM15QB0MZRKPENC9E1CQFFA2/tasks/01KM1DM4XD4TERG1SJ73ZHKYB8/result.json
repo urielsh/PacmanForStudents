@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1DM4XD4TERG1SJ73ZHKYB8",
+  "taskId": "quality-scorer",
+  "invocationKey": "packman-multi-lang-edu:S000036:quality-scorer",
+  "status": "ok",
+  "result": {
+    "criticalIssues": [],
+    "overallScore": 96,
+    "recommendations": [
+      "Consider adding C++ cross-references to annotations for completeness"
+    ],
+    "scores": {
+      "annotations": 95,
+      "behaviorMatch": 96,
+      "buildTests": 100,
+      "namingConventions": 98,
+      "separationOfConcerns": 100
+    }
+  },
+  "startedAt": "2026-03-18T21:29:07.344Z",
+  "finishedAt": "2026-03-18T21:29:07.344Z",
+  "value": {
+    "criticalIssues": [],
+    "overallScore": 96,
+    "recommendations": [
+      "Consider adding C++ cross-references to annotations for completeness"
+    ],
+    "scores": {
+      "annotations": 95,
+      "behaviorMatch": 96,
+      "buildTests": 100,
+      "namingConventions": 98,
+      "separationOfConcerns": 100
+    }
+  }
+}

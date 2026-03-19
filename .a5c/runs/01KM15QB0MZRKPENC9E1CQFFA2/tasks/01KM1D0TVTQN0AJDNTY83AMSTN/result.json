@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1D0TVTQN0AJDNTY83AMSTN",
+  "taskId": "add-lang-annotations",
+  "invocationKey": "packman-multi-lang-edu:S000032:add-lang-annotations",
+  "status": "ok",
+  "result": {
+    "allConceptsCovered": true,
+    "files": {
+      "game_logic.ts": 4,
+      "game.ts": 5,
+      "ghost.ts": 3,
+      "maze.ts": 3,
+      "pacman.ts": 3
+    },
+    "total": 18
+  },
+  "startedAt": "2026-03-18T21:22:21.577Z",
+  "finishedAt": "2026-03-18T21:22:21.577Z",
+  "value": {
+    "allConceptsCovered": true,
+    "files": {
+      "game_logic.ts": 4,
+      "game.ts": 5,
+      "ghost.ts": 3,
+      "maze.ts": 3,
+      "pacman.ts": 3
+    },
+    "total": 18
+  }
+}

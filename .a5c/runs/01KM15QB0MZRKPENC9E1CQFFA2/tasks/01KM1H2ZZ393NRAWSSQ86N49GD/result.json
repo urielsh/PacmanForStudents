@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM1H2ZZ393NRAWSSQ86N49GD",
+  "taskId": "cross-lang-verify",
+  "invocationKey": "packman-multi-lang-edu:S000058:cross-lang-verify",
+  "status": "ok",
+  "result": {
+    "allTestsPass": {
+      "cpp": 26,
+      "java": 18,
+      "javascript": 38,
+      "python": 18,
+      "typescript": 57
+    },
+    "discrepancies": [],
+    "totalTests": 157,
+    "verified": true
+  },
+  "startedAt": "2026-03-18T22:39:28.401Z",
+  "finishedAt": "2026-03-18T22:39:28.401Z",
+  "value": {
+    "allTestsPass": {
+      "cpp": 26,
+      "java": 18,
+      "javascript": 38,
+      "python": 18,
+      "typescript": 57
+    },
+    "discrepancies": [],
+    "totalTests": 157,
+    "verified": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1CQ5YBA53PWAHAY2TGSA57",
+  "taskId": "__sdk.breakpoint",
+  "invocationKey": "packman-multi-lang-edu:S000029:__sdk.breakpoint",
+  "stepId": "S000029",
+  "kind": "breakpoint",
+  "title": "breakpoint",
+  "metadata": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": []
+      },
+      "question": "Phase 3 complete (javascript/HTML5 Canvas). Review and approve to proceed?",
+      "title": "Checkpoint 3: javascript Review"
+    },
+    "requestedAt": "2026-03-18T21:13:10.347Z"
+  },
+  "inputs": {
+    "label": "breakpoint",
+    "payload": {
+      "context": {
+        "files": []
+      },
+      "question": "Phase 3 complete (javascript/HTML5 Canvas). Review and approve to proceed?",
+      "title": "Checkpoint 3: javascript Review"
+    },
+    "requestedAt": "2026-03-18T21:13:10.347Z"
+  }
+}

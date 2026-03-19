@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-19T15:47:12.328Z",
+  "data": {
+    "effectId": "01KM3CF1A6ZEM3RHHHDPTM1EVA",
+    "invocationKey": "packman-website:S000012:devops-cicd",
+    "invocationHash": "5cccae4bf9228820b63bbc76b3e2cccd06c4cf03ca5928b6368ae2ed6b9ed713",
+    "stepId": "S000012",
+    "taskId": "devops-cicd",
+    "kind": "agent",
+    "label": "phase2",
+    "taskDefRef": "tasks/01KM3CF1A6ZEM3RHHHDPTM1EVA/task.json",
+    "labels": [
+      "phase2",
+      "devops",
+      "wave2"
+    ]
+  },
+  "checksum": "47acfb3b0ab184a185ceac23d704621ef42f777097615d8415e4196982b2e2f5"
+}

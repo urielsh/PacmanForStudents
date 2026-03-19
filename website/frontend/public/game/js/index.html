@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman - JavaScript/Canvas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <!-- Load logic modules (they attach classes to window) -->
+    <script src="maze.js"></script>
+    <script src="pacman.js"></script>
+    <script src="ghost.js"></script>
+    <script src="game_logic.js"></script>
+
+    <!-- Load the rendering / game loop -->
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-19T15:19:42.947Z",
+  "data": {
+    "effectId": "01KM3AWPJVKHJSMHBMVGBSB108",
+    "invocationKey": "packman-website:S000002:write-adrs",
+    "invocationHash": "5692d5bba4f622559a833a91788f4125ba2a097a04efd0333a7b90fbe2d0a1e4",
+    "stepId": "S000002",
+    "taskId": "write-adrs",
+    "kind": "agent",
+    "label": "phase1",
+    "taskDefRef": "tasks/01KM3AWPJVKHJSMHBMVGBSB108/task.json",
+    "labels": [
+      "phase1",
+      "architect"
+    ]
+  },
+  "checksum": "2208891f02b1a5573e3edf56f69f8b9b99ecc88299ddaffe516f45baa9f92c47"
+}

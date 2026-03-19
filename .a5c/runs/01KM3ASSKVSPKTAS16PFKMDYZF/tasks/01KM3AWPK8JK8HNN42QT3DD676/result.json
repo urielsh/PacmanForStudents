@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM3AWPK8JK8HNN42QT3DD676",
+  "taskId": "write-tradeoffs",
+  "invocationKey": "packman-website:S000003:write-tradeoffs",
+  "status": "ok",
+  "result": {
+    "filesCreated": [
+      "website/docs/tradeoffs/wasm-bundle-sizes.md",
+      "website/docs/tradeoffs/cheerpj-vs-teavm.md",
+      "website/docs/tradeoffs/iframe-vs-inline-game.md",
+      "website/docs/tradeoffs/static-vs-dynamic-site.md"
+    ],
+    "success": true,
+    "summary": "4 tradeoff analysis docs created with pro/con analysis, concrete numbers, and final decisions."
+  },
+  "startedAt": "2026-03-19T15:29:54.902Z",
+  "finishedAt": "2026-03-19T15:29:54.902Z",
+  "value": {
+    "filesCreated": [
+      "website/docs/tradeoffs/wasm-bundle-sizes.md",
+      "website/docs/tradeoffs/cheerpj-vs-teavm.md",
+      "website/docs/tradeoffs/iframe-vs-inline-game.md",
+      "website/docs/tradeoffs/static-vs-dynamic-site.md"
+    ],
+    "success": true,
+    "summary": "4 tradeoff analysis docs created with pro/con analysis, concrete numbers, and final decisions."
+  }
+}

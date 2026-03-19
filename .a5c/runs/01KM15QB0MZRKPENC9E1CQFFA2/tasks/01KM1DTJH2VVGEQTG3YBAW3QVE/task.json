@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1DTJH2VVGEQTG3YBAW3QVE",
+  "taskId": "implement-game-logic",
+  "invocationKey": "packman-multi-lang-edu:S000039:implement-game-logic",
+  "stepId": "S000039",
+  "kind": "agent",
+  "title": "Implement cpp game logic",
+  "labels": [
+    "backend",
+    "cpp",
+    "phase-5"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1DTJH2VVGEQTG3YBAW3QVE/input.json",
+    "outputJsonPath": "tasks/01KM1DTJH2VVGEQTG3YBAW3QVE/result.json"
+  },
+  "inputs": {
+    "framework": "SDL2",
+    "language": "cpp",
+    "phase": 5,
+    "priorLanguages": [
+      "python",
+      "javascript",
+      "typescript"
+    ]
+  }
+}

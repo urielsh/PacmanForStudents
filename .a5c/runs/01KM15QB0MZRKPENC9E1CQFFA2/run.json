@@ -1,0 +1,13 @@
+{
+  "runId": "01KM15QB0MZRKPENC9E1CQFFA2",
+  "request": "packman-multi-lang-edu",
+  "processId": "packman-multi-lang-edu",
+  "entrypoint": {
+    "importPath": "../../processes/packman-multi-lang-edu.js",
+    "exportName": "process"
+  },
+  "processPath": "../../processes/packman-multi-lang-edu.js",
+  "layoutVersion": "2026.01-storage-preview",
+  "createdAt": "2026-03-18T19:10:55.513Z",
+  "completionProof": "c8e2669a25d613182a187b4a304605d7"
+}

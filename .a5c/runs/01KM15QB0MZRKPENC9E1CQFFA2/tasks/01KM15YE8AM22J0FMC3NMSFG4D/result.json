@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM15YE8AM22J0FMC3NMSFG4D",
+  "taskId": "restructure-repo",
+  "invocationKey": "packman-multi-lang-edu:S000001:restructure-repo",
+  "status": "ok",
+  "result": {
+    "buildSuccess": true,
+    "dirsCreated": [
+      "java/",
+      "python/",
+      "javascript/",
+      "typescript/",
+      "cpp/"
+    ],
+    "filesCreated": [
+      "java/run.sh"
+    ],
+    "filesMoved": [
+      "src/ -> java/src/",
+      "pom.xml -> java/pom.xml"
+    ],
+    "summary": "Repository restructured: src/ moved to java/src/, pom.xml to java/pom.xml, target/ deleted, java/run.sh created, placeholder dirs created (python/, javascript/, typescript/, cpp/). Maven build verified: BUILD SUCCESS."
+  },
+  "startedAt": "2026-03-18T19:19:28.437Z",
+  "finishedAt": "2026-03-18T19:19:28.437Z",
+  "value": {
+    "buildSuccess": true,
+    "dirsCreated": [
+      "java/",
+      "python/",
+      "javascript/",
+      "typescript/",
+      "cpp/"
+    ],
+    "filesCreated": [
+      "java/run.sh"
+    ],
+    "filesMoved": [
+      "src/ -> java/src/",
+      "pom.xml -> java/pom.xml"
+    ],
+    "summary": "Repository restructured: src/ moved to java/src/, pom.xml to java/pom.xml, target/ deleted, java/run.sh created, placeholder dirs created (python/, javascript/, typescript/, cpp/). Maven build verified: BUILD SUCCESS."
+  }
+}

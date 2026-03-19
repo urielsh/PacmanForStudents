@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1CEHRSVSJHB378WN0FYYPB",
+  "taskId": "build-test-lang",
+  "invocationKey": "packman-multi-lang-edu:S000026:build-test-lang",
+  "stepId": "S000026",
+  "kind": "agent",
+  "title": "Build and test javascript (iteration 1)",
+  "labels": [
+    "iteration-1",
+    "javascript",
+    "quality-gate"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1CEHRSVSJHB378WN0FYYPB/input.json",
+    "outputJsonPath": "tasks/01KM1CEHRSVSJHB378WN0FYYPB/result.json"
+  },
+  "inputs": {
+    "iteration": 1,
+    "language": "javascript"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM3C29JX1QT5BMV0T7K3N3C2",
+  "taskId": "devops-nginx",
+  "invocationKey": "packman-website:S000009:devops-nginx",
+  "stepId": "S000009",
+  "kind": "agent",
+  "title": "DevOps: Nginx config + WASM headers + VM provision script",
+  "labels": [
+    "devops",
+    "phase2",
+    "wave1"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM3C29JX1QT5BMV0T7K3N3C2/input.json",
+    "outputJsonPath": "tasks/01KM3C29JX1QT5BMV0T7K3N3C2/result.json"
+  },
+  "inputs": {
+    "projectRoot": "/home/urisha/Desktop/workspace/Packman",
+    "websiteRoot": "/home/urisha/Desktop/workspace/Packman/website"
+  }
+}

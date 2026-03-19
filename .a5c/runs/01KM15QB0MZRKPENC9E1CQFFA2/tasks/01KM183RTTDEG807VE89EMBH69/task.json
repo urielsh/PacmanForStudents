@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM183RTTDEG807VE89EMBH69",
+  "taskId": "add-lang-annotations",
+  "invocationKey": "packman-multi-lang-edu:S000014:add-lang-annotations",
+  "stepId": "S000014",
+  "kind": "agent",
+  "title": "Add educational annotations to python",
+  "labels": [
+    "annotations",
+    "phase-2",
+    "python"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM183RTTDEG807VE89EMBH69/input.json",
+    "outputJsonPath": "tasks/01KM183RTTDEG807VE89EMBH69/result.json"
+  },
+  "inputs": {
+    "language": "python",
+    "phase": 2,
+    "priorLanguages": [
+      "java"
+    ]
+  }
+}

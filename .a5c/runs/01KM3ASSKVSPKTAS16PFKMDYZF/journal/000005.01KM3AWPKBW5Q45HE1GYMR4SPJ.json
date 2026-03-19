@@ -1,0 +1,19 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-19T15:19:42.955Z",
+  "data": {
+    "effectId": "01KM3AWPK8JK8HNN42QT3DD676",
+    "invocationKey": "packman-website:S000003:write-tradeoffs",
+    "invocationHash": "a162e0bbed23496c829c80545fef54b2af44110af63704ebad39959be7ad8461",
+    "stepId": "S000003",
+    "taskId": "write-tradeoffs",
+    "kind": "agent",
+    "label": "phase1",
+    "taskDefRef": "tasks/01KM3AWPK8JK8HNN42QT3DD676/task.json",
+    "labels": [
+      "phase1",
+      "architect"
+    ]
+  },
+  "checksum": "bc180ceb44ae736366ad4203d2b8f89c065d9d9e16fc68f275fa1ba1feb13838"
+}

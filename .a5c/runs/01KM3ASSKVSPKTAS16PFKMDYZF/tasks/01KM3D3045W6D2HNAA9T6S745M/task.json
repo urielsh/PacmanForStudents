@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM3D3045W6D2HNAA9T6S745M",
+  "taskId": "backend-python-java-wasm",
+  "invocationKey": "packman-website:S000014:backend-python-java-wasm",
+  "stepId": "S000014",
+  "kind": "agent",
+  "title": "Backend: Python pygbag + Java CheerpJ ports",
+  "labels": [
+    "backend",
+    "phase2",
+    "wave3"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM3D3045W6D2HNAA9T6S745M/input.json",
+    "outputJsonPath": "tasks/01KM3D3045W6D2HNAA9T6S745M/result.json"
+  },
+  "inputs": {
+    "projectRoot": "/home/urisha/Desktop/workspace/Packman",
+    "websiteRoot": "/home/urisha/Desktop/workspace/Packman/website"
+  }
+}

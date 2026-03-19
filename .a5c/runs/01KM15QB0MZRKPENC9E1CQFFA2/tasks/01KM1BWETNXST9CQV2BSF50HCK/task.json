@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM1BWETNXST9CQV2BSF50HCK",
+  "taskId": "implement-rendering",
+  "invocationKey": "packman-multi-lang-edu:S000022:implement-rendering",
+  "stepId": "S000022",
+  "kind": "agent",
+  "title": "Implement javascript rendering and game loop",
+  "labels": [
+    "frontend",
+    "javascript",
+    "phase-3"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM1BWETNXST9CQV2BSF50HCK/input.json",
+    "outputJsonPath": "tasks/01KM1BWETNXST9CQV2BSF50HCK/result.json"
+  },
+  "inputs": {
+    "framework": "HTML5 Canvas",
+    "language": "javascript",
+    "phase": 3
+  }
+}

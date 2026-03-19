@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-18T21:05:26.556Z",
+  "data": {
+    "effectId": "01KM1C910NCMP1RVJ8RJ4PDJHE",
+    "invocationKey": "packman-multi-lang-edu:S000025:write-lang-tests",
+    "invocationHash": "354a595d97201acdb000089f4a06baf687c62d6db931bd0e0afb14ed2d5ae238",
+    "stepId": "S000025",
+    "taskId": "write-lang-tests",
+    "kind": "agent",
+    "label": "phase-3",
+    "taskDefRef": "tasks/01KM1C910NCMP1RVJ8RJ4PDJHE/task.json",
+    "labels": [
+      "phase-3",
+      "qa",
+      "javascript"
+    ]
+  },
+  "checksum": "6c9965359b905b360c61d7000fa12107b88a5a0b2235fb626770a1fbdd2655b9"
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM167EFTDK4S87GPED8W4FPZ",
+  "taskId": "fix-java-bugs",
+  "invocationKey": "packman-multi-lang-edu:S000002:fix-java-bugs",
+  "status": "ok",
+  "result": {
+    "bugsFixed": 4,
+    "compilationSuccess": true,
+    "summary": "Fixed 4 bugs: (1) Pacman.isValidMove now calls maze.isWall, (2) Ghost movement uses maze.isWall, (3) GamePanel.update checks isGameOver, (4) Pinky color is new Color(0xFF,0xB8,0xFF). Call site updated. BUILD SUCCESS with 0 errors."
+  },
+  "startedAt": "2026-03-18T19:23:09.421Z",
+  "finishedAt": "2026-03-18T19:23:09.421Z",
+  "value": {
+    "bugsFixed": 4,
+    "compilationSuccess": true,
+    "summary": "Fixed 4 bugs: (1) Pacman.isValidMove now calls maze.isWall, (2) Ghost movement uses maze.isWall, (3) GamePanel.update checks isGameOver, (4) Pinky color is new Color(0xFF,0xB8,0xFF). Call site updated. BUILD SUCCESS with 0 errors."
+  }
+}

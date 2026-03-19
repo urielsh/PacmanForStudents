@@ -1,0 +1,1 @@
+{"success": true, "filesCreated": ["website/docs/tradeoffs/wasm-bundle-sizes.md", "website/docs/tradeoffs/cheerpj-vs-teavm.md", "website/docs/tradeoffs/iframe-vs-inline-game.md", "website/docs/tradeoffs/static-vs-dynamic-site.md"], "summary": "4 tradeoff analysis docs created with pro/con analysis, concrete numbers, and final decisions."}
