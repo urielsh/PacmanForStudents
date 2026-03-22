@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-19T16:13:45.820Z",
+  "data": {
+    "effectId": "01KM3DZNET4XRV19P22AJYZ22S",
+    "invocationKey": "packman-website:S000016:backend-snippets",
+    "invocationHash": "124b29ad279d5c21233d35efd09b49f54c5099f9364a1dc27386524c8ee3deb9",
+    "stepId": "S000016",
+    "taskId": "backend-snippets",
+    "kind": "agent",
+    "label": "phase2",
+    "taskDefRef": "tasks/01KM3DZNET4XRV19P22AJYZ22S/task.json",
+    "labels": [
+      "phase2",
+      "backend",
+      "wave4"
+    ]
+  },
+  "checksum": "5eebf99987f77438316b08aded97d46ca62360622fbc7ebefbb024aeac5a644d"
+}

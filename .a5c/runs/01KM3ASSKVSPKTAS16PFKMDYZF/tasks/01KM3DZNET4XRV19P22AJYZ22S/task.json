@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "2026.01.tasks-v1",
+  "effectId": "01KM3DZNET4XRV19P22AJYZ22S",
+  "taskId": "backend-snippets",
+  "invocationKey": "packman-website:S000016:backend-snippets",
+  "stepId": "S000016",
+  "kind": "agent",
+  "title": "Backend: Extract code snippets + build orchestration",
+  "labels": [
+    "backend",
+    "phase2",
+    "wave4"
+  ],
+  "io": {
+    "inputJsonPath": "tasks/01KM3DZNET4XRV19P22AJYZ22S/input.json",
+    "outputJsonPath": "tasks/01KM3DZNET4XRV19P22AJYZ22S/result.json"
+  },
+  "inputs": {
+    "projectRoot": "/home/urisha/Desktop/workspace/Packman",
+    "websiteRoot": "/home/urisha/Desktop/workspace/Packman/website"
+  }
+}

@@ -1,0 +1,94 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  currentSlug: string;
+}
+
+const { title, currentSlug } = Astro.props;
+
+const topics = [
+  { slug: 'game-loop', label: 'Game Loop', icon: '&#128260;' },
+  { slug: 'rendering', label: 'Rendering', icon: '&#127912;' },
+  { slug: 'input-handling', label: 'Input Handling', icon: '&#9000;' },
+  { slug: 'collision-detection', label: 'Collision Detection', icon: '&#128165;' },
+  { slug: 'ghost-ai', label: 'Ghost AI', icon: '&#128123;' },
+  { slug: 'state-management', label: 'State Management', icon: '&#128202;' },
+];
+---
+
+<BaseLayout title={title}>
+  <div class="py-4">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <a href="/" class="text-gray-500 hover:text-pacman-yellow transition-colors">Home</a>
+      <span class="text-gray-600 mx-2">/</span>
+      <a href="/compare" class="text-gray-500 hover:text-pacman-yellow transition-colors">Compare</a>
+      <span class="text-gray-600 mx-2">/</span>
+      <span class="text-gray-300">{title.replace(' - Packman', '')}</span>
+    </nav>
+
+    <div class="flex flex-col lg:flex-row gap-6">
+      <!-- Sidebar (desktop) / Horizontal nav (mobile) -->
+      <aside class="lg:w-56 flex-shrink-0">
+        <!-- Mobile: horizontal scrollable nav -->
+        <nav class="lg:hidden flex gap-2 overflow-x-auto pb-2 -mx-1 px-1">
+          {topics.map((t) => (
+            <a
+              href={`/compare/${t.slug}`}
+              class:list={[
+                'flex-shrink-0 px-3 py-2 rounded-md text-[10px] font-heading tracking-wide transition-all duration-200 border',
+                t.slug === currentSlug
+                  ? 'bg-wall-blue/20 border-wall-blue text-pacman-yellow'
+                  : 'border-gray-800 text-gray-500 hover:text-pacman-yellow hover:border-wall-blue',
+              ]}
+            >
+              <span set:html={t.icon} class="mr-1" />
+              {t.label}
+            </a>
+          ))}
+        </nav>
+
+        <!-- Desktop: vertical sidebar -->
+        <nav class="hidden lg:block sticky top-8">
+          <h3 class="font-heading text-[10px] text-gray-600 tracking-widest mb-3 uppercase">Topics</h3>
+          <ul class="space-y-1">
+            {topics.map((t, i) => (
+              <li>
+                <a
+                  href={`/compare/${t.slug}`}
+                  class:list={[
+                    'flex items-center gap-2 px-3 py-2 rounded-md text-xs transition-all duration-200 border',
+                    t.slug === currentSlug
+                      ? 'bg-wall-blue/20 border-wall-blue text-pacman-yellow'
+                      : 'border-transparent text-gray-500 hover:text-pacman-yellow hover:bg-gray-900',
+                  ]}
+                >
+                  <span class="text-gray-600 font-mono text-[10px] w-4">{String(i + 1).padStart(2, '0')}</span>
+                  <span set:html={t.icon} class="text-sm opacity-60" />
+                  <span class="font-heading text-[10px] tracking-wide">{t.label}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <!-- Back link -->
+          <div class="mt-6 pt-4 border-t border-gray-800">
+            <a
+              href="/compare"
+              class="text-[10px] font-heading text-gray-600 hover:text-pacman-yellow transition-colors tracking-wide"
+            >
+              &larr; ALL TOPICS
+            </a>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Main content -->
+      <div class="flex-1 min-w-0">
+        <slot />
+      </div>
+    </div>
+  </div>
+</BaseLayout>

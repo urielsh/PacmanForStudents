@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pacman - Java/Swing (via CheerpJ)</title>
+
+    <!-- CheerpJ 3 runtime ─ converts Java bytecode to WASM/JS in the browser -->
+    <script src="https://cjrtnc.leaningtech.com/3.0/cj3loader.js"></script>
+
+    <style>
+        /* ── Packman dark theme ─────────────────────────────────── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: #000;
+            color: #ffe600;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .subtitle {
+            color: #aaa;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        /* ── Loading indicator ──────────────────────────────────── */
+        #loading-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid rgba(255, 230, 0, 0.2);
+            border-top-color: #ffe600;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        #loading-status {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        #progress-bar-outer {
+            width: 300px;
+            height: 6px;
+            background: #222;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        #progress-bar-inner {
+            width: 0%;
+            height: 100%;
+            background: #ffe600;
+            transition: width 0.3s ease;
+        }
+
+        /* ── CheerpJ display container ──────────────────────────── */
+        #cheerpj-display {
+            display: none;
+            border: 2px solid #333;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        /* ── Controls help ──────────────────────────────────────── */
+        .controls {
+            margin-top: 1rem;
+            color: #888;
+            font-size: 0.8rem;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .controls kbd {
+            display: inline-block;
+            padding: 2px 7px;
+            background: #222;
+            border: 1px solid #444;
+            border-radius: 3px;
+            color: #ffe600;
+            font-family: monospace;
+            font-size: 0.8rem;
+        }
+
+        /* ── Error state ────────────────────────────────────────── */
+        #error-container {
+            display: none;
+            color: #ff4444;
+            text-align: center;
+            max-width: 500px;
+        }
+
+        #error-container p {
+            margin-top: 0.5rem;
+            color: #aaa;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pacman — Java/Swing</h1>
+    <div class="subtitle">Running via CheerpJ (Java-to-WebAssembly)</div>
+
+    <!-- Loading indicator (visible until CheerpJ is ready) -->
+    <div id="loading-container">
+        <div class="spinner"></div>
+        <div id="loading-status">Initializing CheerpJ runtime&hellip;</div>
+        <div id="progress-bar-outer">
+            <div id="progress-bar-inner"></div>
+        </div>
+    </div>
+
+    <!-- Error display (hidden by default) -->
+    <div id="error-container">
+        <strong>Failed to load CheerpJ</strong>
+        <p id="error-message"></p>
+    </div>
+
+    <!-- CheerpJ will render the Swing application into this container -->
+    <div id="cheerpj-display"></div>
+
+    <!-- Keyboard controls reminder -->
+    <div class="controls">
+        <kbd>&uarr;</kbd> <kbd>&darr;</kbd> <kbd>&larr;</kbd> <kbd>&rarr;</kbd> Arrow keys to move
+        &nbsp;&middot;&nbsp; <kbd>Esc</kbd> to quit
+    </div>
+
+    <script>
+        (async function () {
+            const loadingContainer  = document.getElementById('loading-container');
+            const loadingStatus     = document.getElementById('loading-status');
+            const progressBarInner  = document.getElementById('progress-bar-inner');
+            const cheerpjDisplay    = document.getElementById('cheerpj-display');
+            const errorContainer    = document.getElementById('error-container');
+            const errorMessage      = document.getElementById('error-message');
+
+            // Simulated progress steps (CheerpJ does not expose granular progress)
+            const steps = [
+                { pct: 15, msg: 'Downloading CheerpJ runtime\u2026' },
+                { pct: 40, msg: 'Initializing JVM\u2026' },
+                { pct: 65, msg: 'Loading Pacman JAR\u2026' },
+                { pct: 85, msg: 'Starting Swing application\u2026' },
+            ];
+
+            let stepIndex = 0;
+            const progressTimer = setInterval(function () {
+                if (stepIndex < steps.length) {
+                    progressBarInner.style.width = steps[stepIndex].pct + '%';
+                    loadingStatus.textContent = steps[stepIndex].msg;
+                    stepIndex++;
+                }
+            }, 800);
+
+            try {
+                // Initialize the CheerpJ 3 runtime.
+                // clipboardMode: "system" allows standard copy/paste;
+                // the Swing app is rendered into an internal display element.
+                await cheerpjInit({
+                    clipboardMode: 'system',
+                    status: function (msg) {
+                        loadingStatus.textContent = msg;
+                    }
+                });
+
+                // Run the Pacman JAR.
+                // The path is relative to the web root. In our deployment the
+                // JAR sits at /game/java/pacman-1.0.jar alongside this HTML.
+                // CheerpJ paths use a /app/ virtual filesystem prefix for
+                // HTTP-accessible resources.
+                await cheerpjRunJar('/app/pacman-1.0.jar');
+
+                // CheerpJ has started -- hide loading, show the display
+                clearInterval(progressTimer);
+                progressBarInner.style.width = '100%';
+                loadingStatus.textContent = 'Ready!';
+
+                setTimeout(function () {
+                    loadingContainer.style.display = 'none';
+                    cheerpjDisplay.style.display = 'block';
+                }, 400);
+
+            } catch (err) {
+                clearInterval(progressTimer);
+                loadingContainer.style.display = 'none';
+                errorContainer.style.display = 'block';
+                errorMessage.textContent = err.message || String(err);
+                console.error('CheerpJ initialization failed:', err);
+            }
+        })();
+    </script>
+
+</body>
+</html>

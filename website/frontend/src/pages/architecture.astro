@@ -1,0 +1,200 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArchitectureDiagram from '../components/ArchitectureDiagram.tsx';
+---
+
+<BaseLayout
+  title="Architecture - Packman"
+  description="Explore the 6-class architecture shared across all five Packman language implementations."
+>
+  <!-- Page Header -->
+  <section class="text-center py-8 border-b-2 border-wall-blue mb-8">
+    <h1 class="font-heading text-pacman-yellow text-xl sm:text-2xl tracking-wider mb-4">
+      ARCHITECTURE
+    </h1>
+    <p class="text-gray-400 text-sm max-w-2xl mx-auto leading-relaxed">
+      Every Packman implementation -- Python, JavaScript, TypeScript, Java, and C++ -- shares the same
+      6-class architecture. The classes, their responsibilities, and their relationships are identical.
+      Only the syntax changes.
+    </p>
+  </section>
+
+  <!-- Class Overview -->
+  <section class="mb-12">
+    <h2 class="font-heading text-ghost-cyan text-sm sm:text-base mb-6 tracking-wider">
+      THE 6-CLASS STRUCTURE
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+      <div class="border-2 border-blue-700 rounded-lg p-4 bg-black/60">
+        <h3 class="font-heading text-blue-400 text-xs mb-2">Maze</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">
+          Owns the grid -- walls and pellets. Every entity that moves must consult the Maze
+          before stepping to a new tile. Responsible for drawing the static game board.
+        </p>
+      </div>
+      <div class="border-2 border-yellow-500 rounded-lg p-4 bg-black/60">
+        <h3 class="font-heading text-yellow-400 text-xs mb-2">Pacman</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">
+          The player character. Accepts directional input, checks the Maze for walls,
+          moves one tile per update, and renders a yellow circle.
+        </p>
+      </div>
+      <div class="border-2 border-red-600 rounded-lg p-4 bg-black/60">
+        <h3 class="font-heading text-red-400 text-xs mb-2">Ghost</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">
+          An enemy that picks random valid directions every N frames. Each ghost has a
+          unique color. Like Pacman, it checks Maze.isWall() before every move.
+        </p>
+      </div>
+      <div class="border-2 border-cyan-500 rounded-lg p-4 bg-black/60">
+        <h3 class="font-heading text-cyan-400 text-xs mb-2">GameLogic</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">
+          Owns the Maze and manages game state: score, game-over flag. Runs collision
+          detection each frame to handle pellet eating and ghost encounters.
+        </p>
+      </div>
+      <div class="border-2 border-pink-400 rounded-lg p-4 bg-black/60">
+        <h3 class="font-heading text-pink-300 text-xs mb-2">GamePanel</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">
+          The top-level controller. Owns all game objects, runs the game loop (update/render),
+          and dispatches keyboard input to Pacman's setDirection method.
+        </p>
+      </div>
+      <div class="border-2 border-purple-500 rounded-lg p-4 bg-black/60">
+        <h3 class="font-heading text-purple-400 text-xs mb-2">Main / Entry</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">
+          Platform-specific bootstrap: initializes the graphics subsystem (Swing, Pygame,
+          Canvas, SDL2), creates a GamePanel, and starts the game loop.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Diagram -->
+  <section class="mb-12">
+    <h2 class="font-heading text-ghost-cyan text-sm sm:text-base mb-4 tracking-wider">
+      INTERACTIVE CLASS DIAGRAM
+    </h2>
+    <p class="text-gray-400 text-xs mb-6">
+      Select a language to see how method signatures change while the class structure stays the same.
+    </p>
+    <ArchitectureDiagram client:load />
+  </section>
+
+  <!-- Class Contracts -->
+  <section class="mb-12 border-t-2 border-wall-blue pt-8">
+    <h2 class="font-heading text-ghost-cyan text-sm sm:text-base mb-6 tracking-wider">
+      CLASS CONTRACTS
+    </h2>
+    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+      Every language implementation must fulfil these contracts exactly. A class is correct only
+      when all its contract methods exist and behave as described.
+    </p>
+
+    <div class="space-y-6">
+      <div class="border-l-4 border-blue-600 pl-4">
+        <h3 class="font-heading text-blue-400 text-xs mb-2">Maze Contract</h3>
+        <ul class="text-gray-400 text-xs space-y-1 list-disc list-inside">
+          <li><code class="text-blue-300">isWall(x, y)</code> -- returns true for walls and out-of-bounds coordinates</li>
+          <li><code class="text-blue-300">hasPellet(x, y)</code> -- returns true if a pellet exists at the given grid position</li>
+          <li><code class="text-blue-300">removePellet(x, y)</code> -- removes the pellet at the given position (idempotent)</li>
+          <li><code class="text-blue-300">draw(graphics, tileSize)</code> -- renders walls as blue rectangles and pellets as white dots</li>
+        </ul>
+      </div>
+
+      <div class="border-l-4 border-yellow-500 pl-4">
+        <h3 class="font-heading text-yellow-400 text-xs mb-2">Pacman Contract</h3>
+        <ul class="text-gray-400 text-xs space-y-1 list-disc list-inside">
+          <li><code class="text-yellow-300">setDirection(dx, dy)</code> -- queues the next direction; does not move immediately</li>
+          <li><code class="text-yellow-300">update(maze)</code> -- moves one tile in the current direction if the target is not a wall</li>
+          <li><code class="text-yellow-300">draw(graphics)</code> -- renders the player as a yellow circle</li>
+          <li><code class="text-yellow-300">getGridX() / getGridY()</code> -- returns current grid position for collision detection</li>
+        </ul>
+      </div>
+
+      <div class="border-l-4 border-red-600 pl-4">
+        <h3 class="font-heading text-red-400 text-xs mb-2">Ghost Contract</h3>
+        <ul class="text-gray-400 text-xs space-y-1 list-disc list-inside">
+          <li><code class="text-red-300">update(maze)</code> -- picks a random valid direction every N frames; checks isWall() before moving</li>
+          <li><code class="text-red-300">draw(graphics)</code> -- renders as a colored rectangle with two white eyes</li>
+          <li><code class="text-red-300">getGridX() / getGridY()</code> -- returns current grid position for collision detection</li>
+        </ul>
+      </div>
+
+      <div class="border-l-4 border-cyan-500 pl-4">
+        <h3 class="font-heading text-cyan-400 text-xs mb-2">GameLogic Contract</h3>
+        <ul class="text-gray-400 text-xs space-y-1 list-disc list-inside">
+          <li><code class="text-cyan-300">checkCollisions(pacman, ghosts)</code> -- eat pellets under Pacman; end game if Pacman overlaps a ghost</li>
+          <li><code class="text-cyan-300">getMaze()</code> -- returns the Maze instance owned by GameLogic</li>
+          <li><code class="text-cyan-300">getScore()</code> -- returns current score (10 points per pellet)</li>
+          <li><code class="text-cyan-300">isGameOver()</code> -- returns true when Pacman has died</li>
+        </ul>
+      </div>
+
+      <div class="border-l-4 border-pink-400 pl-4">
+        <h3 class="font-heading text-pink-300 text-xs mb-2">GamePanel Contract</h3>
+        <ul class="text-gray-400 text-xs space-y-1 list-disc list-inside">
+          <li><code class="text-pink-200">startGame()</code> -- initializes and starts the game loop (timer, requestAnimationFrame, or SDL loop)</li>
+          <li><code class="text-pink-200">update()</code> -- advances game state: moves entities, checks collisions, checks game-over</li>
+          <li><code class="text-pink-200">render(graphics)</code> -- clears screen, draws maze, pacman, ghosts, and the HUD (score)</li>
+          <li><code class="text-pink-200">handleInput(key)</code> -- translates keyboard events into Pacman direction changes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Loop -->
+  <section class="mb-12 border-t-2 border-wall-blue pt-8">
+    <h2 class="font-heading text-ghost-cyan text-sm sm:text-base mb-6 tracking-wider">
+      THE GAME LOOP
+    </h2>
+    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+      Regardless of language, every Packman implementation follows the same three-phase game loop
+      running at approximately 60 frames per second:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      <div class="border-2 border-ghost-magenta rounded-lg p-4 text-center">
+        <div class="font-heading text-ghost-magenta text-2xl mb-2">1</div>
+        <h3 class="font-heading text-ghost-magenta text-xs mb-2">INPUT</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">
+          Keyboard events are captured and translated into direction vectors via
+          <code class="text-pink-300">handleInput()</code>. The direction is queued, not applied immediately.
+        </p>
+      </div>
+      <div class="border-2 border-ghost-cyan rounded-lg p-4 text-center">
+        <div class="font-heading text-ghost-cyan text-2xl mb-2">2</div>
+        <h3 class="font-heading text-ghost-cyan text-xs mb-2">UPDATE</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">
+          Pacman and each Ghost call <code class="text-cyan-300">update(maze)</code> to attempt movement.
+          Then <code class="text-cyan-300">checkCollisions()</code> handles pellet eating and ghost contact.
+        </p>
+      </div>
+      <div class="border-2 border-pacman-yellow rounded-lg p-4 text-center">
+        <div class="font-heading text-pacman-yellow text-2xl mb-2">3</div>
+        <h3 class="font-heading text-pacman-yellow text-xs mb-2">RENDER</h3>
+        <p class="text-gray-400 text-xs leading-relaxed">
+          The screen is cleared, then the Maze, Pacman, all Ghosts, and the score HUD are drawn
+          in order via <code class="text-yellow-300">render()</code>.
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-lg p-4 border border-gray-700 max-w-2xl mx-auto">
+      <p class="font-heading text-gray-500 text-[10px] mb-3 tracking-wider">PSEUDOCODE</p>
+      <pre class="text-green-400 text-xs font-mono leading-relaxed whitespace-pre-wrap">{"while (!gameLogic.isGameOver()) {\n  handleInput(pendingKeyEvent)\n  pacman.update(maze)\n  for each ghost in ghosts:\n    ghost.update(maze)\n  gameLogic.checkCollisions(pacman, ghosts)\n  render(maze, pacman, ghosts, score)\n  sleep(1000 / 60)  // ~16ms per frame\n}"}</pre>
+    </div>
+  </section>
+
+  <!-- Critical Rule -->
+  <section class="mb-8 border-t-2 border-wall-blue pt-8">
+    <div class="bg-red-950 border-2 border-ghost-red rounded-lg p-6 max-w-3xl mx-auto text-center">
+      <h3 class="font-heading text-ghost-red text-xs mb-3 tracking-wider">CRITICAL ARCHITECTURE RULE</h3>
+      <p class="text-gray-300 text-sm leading-relaxed">
+        Any entity that moves on the grid <strong class="text-white">MUST</strong> accept Maze as a dependency
+        and call <code class="text-red-300 font-mono">isWall()</code> before moving.
+        Boundary-only checks are <strong class="text-red-400">NEVER</strong> sufficient.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

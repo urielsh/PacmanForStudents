@@ -1,6 +1,8 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import CompareLayout from '../../layouts/CompareLayout.astro';
 import { getCollection } from 'astro:content';
+import CodeComparisonWidget from '../../components/CodeComparisonWidget';
+import snippetsData from '../../../../backend/data/snippets.json';
 
 export async function getStaticPaths() {
   const comparisons = await getCollection('comparisons');
@@ -18,79 +20,82 @@ const sorted = comparisons.sort((a, b) => a.data.order - b.data.order);
 const currentIndex = sorted.findIndex((c) => c.slug === entry.slug);
 const prev = currentIndex > 0 ? sorted[currentIndex - 1] : null;
 const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
+
+// Get the snippets for this topic
+const topicSnippets = (snippetsData as Record<string, any>)[entry.slug] || {};
 ---
 
-<BaseLayout title={`${entry.data.title} - Packman`}>
-  <div class="py-4">
-    <!-- Breadcrumb -->
-    <nav class="mb-6 text-sm">
-      <a href="/" class="text-gray-500 hover:text-pacman-yellow transition-colors">Home</a>
-      <span class="text-gray-600 mx-2">/</span>
-      <a href="/compare" class="text-gray-500 hover:text-pacman-yellow transition-colors">Compare</a>
-      <span class="text-gray-600 mx-2">/</span>
-      <span class="text-gray-300">{entry.data.title}</span>
-    </nav>
-
-    <!-- Topic header -->
-    <div class="mb-8">
-      <span class="font-heading text-xs text-gray-600 mb-2 block">
-        TOPIC {String(entry.data.order).padStart(2, '0')} OF {String(sorted.length).padStart(2, '0')}
-      </span>
-      <h1 class="font-heading text-pacman-yellow text-xl sm:text-2xl tracking-wider mb-3">
-        {entry.data.title}
-      </h1>
-      <p class="text-gray-400 text-sm">{entry.data.description}</p>
-    </div>
-
-    <!-- Rendered markdown content -->
-    <article class="prose prose-invert prose-sm sm:prose-base max-w-none
-      prose-headings:font-heading prose-headings:text-pacman-yellow prose-headings:tracking-wide
-      prose-h1:text-xl prose-h2:text-lg prose-h3:text-base
-      prose-a:text-ghost-cyan prose-a:no-underline hover:prose-a:underline
-      prose-code:text-ghost-pink prose-code:bg-gray-900 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
-      prose-pre:bg-gray-900 prose-pre:border prose-pre:border-wall-blue
-      prose-table:text-sm
-      prose-th:text-pacman-yellow prose-th:font-heading prose-th:text-xs
-      prose-td:text-gray-300
-      prose-strong:text-gray-200
-      prose-li:text-gray-300
-      prose-hr:border-wall-blue
-    ">
-      <Content />
-    </article>
-
-    <!-- Prev/Next navigation -->
-    <div class="mt-12 pt-6 border-t border-wall-blue flex flex-col sm:flex-row justify-between gap-4">
-      {prev ? (
-        <a
-          href={`/compare/${prev.slug}`}
-          class="font-heading text-xs text-gray-400 hover:text-pacman-yellow transition-colors"
-        >
-          &larr; {prev.data.title}
-        </a>
-      ) : (
-        <a
-          href="/compare"
-          class="font-heading text-xs text-gray-400 hover:text-pacman-yellow transition-colors"
-        >
-          &larr; ALL TOPICS
-        </a>
-      )}
-      {next ? (
-        <a
-          href={`/compare/${next.slug}`}
-          class="font-heading text-xs text-pacman-yellow hover:text-yellow-400 transition-colors"
-        >
-          {next.data.title} &rarr;
-        </a>
-      ) : (
-        <a
-          href="/compare"
-          class="font-heading text-xs text-pacman-yellow hover:text-yellow-400 transition-colors"
-        >
-          ALL TOPICS &rarr;
-        </a>
-      )}
-    </div>
+<CompareLayout title={`${entry.data.title} - Packman`} currentSlug={entry.slug}>
+  <!-- Topic header -->
+  <div class="mb-8">
+    <span class="font-heading text-xs text-gray-600 mb-2 block">
+      TOPIC {String(entry.data.order).padStart(2, '0')} OF {String(sorted.length).padStart(2, '0')}
+    </span>
+    <h1 class="font-heading text-pacman-yellow text-xl sm:text-2xl tracking-wider mb-3">
+      {entry.data.title}
+    </h1>
+    <p class="text-gray-400 text-sm">{entry.data.description}</p>
   </div>
-</BaseLayout>
+
+  <!-- Interactive Code Comparison Widget -->
+  {Object.keys(topicSnippets).length > 0 && (
+    <div class="mb-10 p-4 rounded-lg border border-wall-blue/50 bg-gray-950/50">
+      <CodeComparisonWidget
+        client:load
+        topic={entry.slug}
+        snippets={topicSnippets}
+      />
+    </div>
+  )}
+
+  <!-- Rendered markdown content -->
+  <article class="prose prose-invert prose-sm sm:prose-base max-w-none
+    prose-headings:font-heading prose-headings:text-pacman-yellow prose-headings:tracking-wide
+    prose-h1:text-xl prose-h2:text-lg prose-h3:text-base
+    prose-a:text-ghost-cyan prose-a:no-underline hover:prose-a:underline
+    prose-code:text-ghost-pink prose-code:bg-gray-900 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+    prose-pre:bg-gray-900 prose-pre:border prose-pre:border-wall-blue
+    prose-table:text-sm
+    prose-th:text-pacman-yellow prose-th:font-heading prose-th:text-xs
+    prose-td:text-gray-300
+    prose-strong:text-gray-200
+    prose-li:text-gray-300
+    prose-hr:border-wall-blue
+  ">
+    <Content />
+  </article>
+
+  <!-- Prev/Next navigation -->
+  <div class="mt-12 pt-6 border-t border-wall-blue flex flex-col sm:flex-row justify-between gap-4">
+    {prev ? (
+      <a
+        href={`/compare/${prev.slug}`}
+        class="font-heading text-xs text-gray-400 hover:text-pacman-yellow transition-colors"
+      >
+        &larr; {prev.data.title}
+      </a>
+    ) : (
+      <a
+        href="/compare"
+        class="font-heading text-xs text-gray-400 hover:text-pacman-yellow transition-colors"
+      >
+        &larr; ALL TOPICS
+      </a>
+    )}
+    {next ? (
+      <a
+        href={`/compare/${next.slug}`}
+        class="font-heading text-xs text-pacman-yellow hover:text-yellow-400 transition-colors"
+      >
+        {next.data.title} &rarr;
+      </a>
+    ) : (
+      <a
+        href="/compare"
+        class="font-heading text-xs text-pacman-yellow hover:text-yellow-400 transition-colors"
+      >
+        ALL TOPICS &rarr;
+      </a>
+    )}
+  </div>
+</CompareLayout>

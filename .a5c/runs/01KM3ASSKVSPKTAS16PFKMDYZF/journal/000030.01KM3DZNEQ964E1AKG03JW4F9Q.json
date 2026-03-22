@@ -1,0 +1,20 @@
+{
+  "type": "EFFECT_REQUESTED",
+  "recordedAt": "2026-03-19T16:13:45.815Z",
+  "data": {
+    "effectId": "01KM3DZNEGWZXTCRQ9AN0R17H8",
+    "invocationKey": "packman-website:S000015:frontend-polish",
+    "invocationHash": "6770bec51ae82a3d3afb1315c9ed8cc6301d449af0fe0153e238c4864e48b749",
+    "stepId": "S000015",
+    "taskId": "frontend-polish",
+    "kind": "agent",
+    "label": "phase2",
+    "taskDefRef": "tasks/01KM3DZNEGWZXTCRQ9AN0R17H8/task.json",
+    "labels": [
+      "phase2",
+      "frontend",
+      "wave4"
+    ]
+  },
+  "checksum": "def092e64634d03bcea09890a18bde1e97ee7b38ffbaa66162e9f6f49babebfa"
+}

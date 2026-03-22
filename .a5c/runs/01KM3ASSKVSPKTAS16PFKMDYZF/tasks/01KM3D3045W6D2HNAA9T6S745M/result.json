@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2026.01.results-v1",
+  "effectId": "01KM3D3045W6D2HNAA9T6S745M",
+  "taskId": "backend-python-java-wasm",
+  "invocationKey": "packman-website:S000014:backend-python-java-wasm",
+  "status": "ok",
+  "result": {
+    "filesCreated": [
+      "website/backend/wasm/python/web_main.py",
+      "website/backend/wasm/python/pygbag.toml",
+      "website/backend/scripts/build-python-wasm.sh",
+      "website/backend/wasm/java/cheerpj-loader.html",
+      "website/backend/scripts/build-java-jar.sh"
+    ],
+    "success": true,
+    "summary": "Created 5 files for browser Python and Java ports. web_main.py: async pygbag adaptation with asyncio.sleep(0) in game loop. pygbag.toml: build config 610x700. build-python-wasm.sh: copies python files, replaces main.py, runs pygbag --build. cheerpj-loader.html: dark themed HTML loading CheerpJ 3 from CDN, cheerpjInit()+cheerpjRunJar(), spinner/progress, keyboard controls. build-java-jar.sh: runs mvn clean package, copies JAR and loader to frontend/public/game/java/."
+  },
+  "startedAt": "2026-03-19T16:13:38.632Z",
+  "finishedAt": "2026-03-19T16:13:38.632Z",
+  "value": {
+    "filesCreated": [
+      "website/backend/wasm/python/web_main.py",
+      "website/backend/wasm/python/pygbag.toml",
+      "website/backend/scripts/build-python-wasm.sh",
+      "website/backend/wasm/java/cheerpj-loader.html",
+      "website/backend/scripts/build-java-jar.sh"
+    ],
+    "success": true,
+    "summary": "Created 5 files for browser Python and Java ports. web_main.py: async pygbag adaptation with asyncio.sleep(0) in game loop. pygbag.toml: build config 610x700. build-python-wasm.sh: copies python files, replaces main.py, runs pygbag --build. cheerpj-loader.html: dark themed HTML loading CheerpJ 3 from CDN, cheerpjInit()+cheerpjRunJar(), spinner/progress, keyboard controls. build-java-jar.sh: runs mvn clean package, copies JAR and loader to frontend/public/game/java/."
+  }
+}

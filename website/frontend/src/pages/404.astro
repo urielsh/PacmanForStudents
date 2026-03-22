@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="404 - Page Not Found" description="The page you are looking for does not exist.">
+  <div class="flex flex-col items-center justify-center py-16 sm:py-24 text-center">
+    <!-- Ghost CSS Art -->
+    <div class="relative mb-8" aria-hidden="true">
+      <!-- Ghost body -->
+      <div class="w-32 h-36 relative animate-float">
+        <svg viewBox="0 0 128 144" width="128" height="144" class="drop-shadow-[0_0_20px_rgba(255,0,0,0.4)]">
+          <!-- Ghost body -->
+          <path
+            d="M 16 72 Q 16 16, 64 16 Q 112 16, 112 72 L 112 128
+               L 96 112 L 80 128 L 64 112 L 48 128 L 32 112 L 16 128 Z"
+            fill="#FF0000"
+          />
+          <!-- Left eye white -->
+          <ellipse cx="48" cy="60" rx="12" ry="14" fill="white" />
+          <!-- Right eye white -->
+          <ellipse cx="80" cy="60" rx="12" ry="14" fill="white" />
+          <!-- Left pupil -->
+          <ellipse cx="52" cy="62" rx="6" ry="7" fill="#0000FF" />
+          <!-- Right pupil -->
+          <ellipse cx="84" cy="62" rx="6" ry="7" fill="#0000FF" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Error Text -->
+    <h1 class="font-heading text-pacman-yellow text-4xl sm:text-5xl mb-4 tracking-wider">
+      404
+    </h1>
+    <h2 class="font-heading text-ghost-red text-sm sm:text-base mb-6 tracking-wider">
+      PAGE NOT FOUND
+    </h2>
+
+    <!-- Pellet trail -->
+    <div class="flex items-center gap-3 mb-8" aria-hidden="true">
+      <span class="w-2 h-2 rounded-full bg-white inline-block opacity-40"></span>
+      <span class="w-2 h-2 rounded-full bg-white inline-block opacity-50"></span>
+      <span class="w-2 h-2 rounded-full bg-white inline-block opacity-60"></span>
+      <span class="w-3 h-3 rounded-full bg-white inline-block opacity-70"></span>
+      <span class="text-pacman-yellow text-2xl animate-chomp">&#9679;</span>
+    </div>
+
+    <p class="text-gray-400 text-sm mb-8 max-w-md leading-relaxed">
+      Looks like this page was eaten by a ghost.
+      The maze doesn't have a path to what you're looking for.
+    </p>
+
+    <!-- Navigation links -->
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a
+        href="/"
+        class="font-heading text-xs border-2 border-pacman-yellow text-pacman-yellow px-8 py-3 rounded hover:bg-pacman-yellow hover:text-pacman-black transition-colors duration-200"
+      >
+        GO HOME
+      </a>
+      <a
+        href="/play"
+        class="font-heading text-xs border-2 border-ghost-cyan text-ghost-cyan px-8 py-3 rounded hover:bg-ghost-cyan hover:text-pacman-black transition-colors duration-200"
+      >
+        PLAY GAME
+      </a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+</style>
